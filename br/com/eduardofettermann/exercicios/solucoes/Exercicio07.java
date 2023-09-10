@@ -1,14 +1,21 @@
-package br.com.eduardofettermann.exercicios.service;
-import java.util.Scanner;
+package br.com.eduardofettermann.exercicios.solucoes;
+import br.com.eduardofettermann.exercicios.model.Exercicio;
 
 //Exercicio 07
 //        Criar para uma empresa de consórcio. No teste inicial, você deve perguntar para o usuário a idade dele
 //        e o seu salário. A pessoa só pode comprar um automóvel se for de maior e ganhar mais de R$ 2.000,00.
 
-public class Exercicio07 {
-    private Scanner scanner = new Scanner(System.in);
+public class Exercicio07 implements Exercicio {
 
-    public void comprarAutomovel() {
+    @Override
+    public void resolve() {
+        System.out.println("""
+                - Exercicio 07 
+                Criar para uma empresa de consórcio. No teste inicial, você deve perguntar para o usuário a idade dele
+                e o seu salário. A pessoa só pode comprar um automóvel se for de maior e ganhar mais de R$ 2.000,00.
+                Solução:
+                            """);
+
         System.out.println("Qual sua idade?");
         int idade = scanner.nextInt();
         System.out.println("Qual seu salário?");
@@ -18,5 +25,6 @@ public class Exercicio07 {
         } else {
             System.out.println("Você não pode comprar um automovel");
         }
+        menu.exibeMenuFinal();
     }
 }

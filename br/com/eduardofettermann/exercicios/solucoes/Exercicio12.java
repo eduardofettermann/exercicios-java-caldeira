@@ -1,17 +1,25 @@
-package br.com.eduardofettermann.exercicios.service;
+package br.com.eduardofettermann.exercicios.solucoes;
+import br.com.eduardofettermann.exercicios.model.Exercicio;
 import java.text.DecimalFormat;
-import java.util.Scanner;
 
 //Exercicio 12
 //        Crie um programa que converta uma quantia em dólares para outra moeda,
 //        como euros ou reais. Peça ao usuário para inserir a quantia em dólares e a taxa
 //        de câmbio atual. Em seguida, calcule e exiba o valor convertido.
 
-public class Exercicio12 {
+public class Exercicio12 implements Exercicio {
     private final DecimalFormat FORMATO_DECIMAL = new DecimalFormat("0.00");
-    private Scanner scanner = new Scanner(System.in);
 
-    public void converteDolar(){
+    @Override
+    public void resolve() {
+        System.out.println("""
+                - Exercicio 12 
+                Crie um programa que converta uma quantia em dólares para outra moeda,
+                como euros ou reais. Peça ao usuário para inserir a quantia em dólares e a taxa
+                de câmbio atual. Em seguida, calcule e exiba o valor convertido.
+                Solução:
+                                """);
+
         System.out.println("Você quer converter o dólar em que moeda?");
         String moeda = scanner.nextLine();
         System.out.println("Insira a quantia de dólar a ser convertida:");
@@ -20,6 +28,8 @@ public class Exercicio12 {
         double taxaDoCambio = scanner.nextDouble();
         double dolarConvertido = quantiaDeDolar * taxaDoCambio;
         String dolarArredondado = FORMATO_DECIMAL.format(dolarConvertido);
-        System.out.println(quantiaDeDolar + " dolar(es)" + " = " + dolarArredondado + " em " + moeda );
+        System.out.println(quantiaDeDolar + " dolar(es)" + " = " + dolarArredondado + " em " + moeda);
+
+        menu.exibeMenuFinal();
     }
 }
