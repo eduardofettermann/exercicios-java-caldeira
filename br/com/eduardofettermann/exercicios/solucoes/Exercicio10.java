@@ -1,4 +1,5 @@
 package br.com.eduardofettermann.exercicios.solucoes;
+
 import br.com.eduardofettermann.exercicios.model.Exercicio;
 
 //Exercicio 10
@@ -9,7 +10,7 @@ import br.com.eduardofettermann.exercicios.model.Exercicio;
 public class Exercicio10 implements Exercicio {
 
     @Override
-    public void resolve() {
+    public void exibeEnunciado() {
         System.out.println("""
                 - Exercicio 10
                 Crie um programa em Java que peça ao usuário para inserir uma temperatura em graus
@@ -17,7 +18,11 @@ public class Exercicio10 implements Exercicio {
                 Fahrenheit = (Celsius * 9/5) + 32. Exiba o resultado na tela.
                 Solução:
                                 """);
+    }
 
+    @Override
+    public void resolve() {
+        exibeEnunciado();
         System.out.println("Digite o valor em Celsius:");
         double valorEmCelsius = scanner.nextDouble();
         double valorEmFahrenheit = (valorEmCelsius * 9 / 5) + 32;

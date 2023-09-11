@@ -1,4 +1,5 @@
 package br.com.eduardofettermann.exercicios.solucoes;
+
 import br.com.eduardofettermann.exercicios.model.Exercicio;
 
 //Exercicio 13
@@ -9,7 +10,7 @@ import br.com.eduardofettermann.exercicios.model.Exercicio;
 public class Exercicio13 implements Exercicio {
 
     @Override
-    public void resolve() {
+    public void exibeEnunciado() {
         System.out.println("""
                 - Exercicio 13
                 Escreva um programa que calcule o fatorial de um número inteiro não negativo
@@ -17,7 +18,11 @@ public class Exercicio13 implements Exercicio {
                 de 1 até N.
                 Solução:
                                 """);
+    }
 
+    @Override
+    public void resolve() {
+        exibeEnunciado();
         System.out.println("Digite um número não negativo que mostrarei o seu fatorial!");
         int numero = scanner.nextInt();
         int fatorial = numero;

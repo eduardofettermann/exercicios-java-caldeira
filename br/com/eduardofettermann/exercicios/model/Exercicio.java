@@ -8,6 +8,8 @@ public interface Exercicio {
     Scanner scanner = new Scanner(System.in);
     Menu menu = new Menu();
 
+    void exibeEnunciado();
     void resolve();
+
 }
 

@@ -1,5 +1,7 @@
 package br.com.eduardofettermann.exercicios.solucoes;
+
 import br.com.eduardofettermann.exercicios.model.Exercicio;
+
 import java.text.DecimalFormat;
 
 //Exercicio 12
@@ -11,7 +13,7 @@ public class Exercicio12 implements Exercicio {
     private final DecimalFormat FORMATO_DECIMAL = new DecimalFormat("0.00");
 
     @Override
-    public void resolve() {
+    public void exibeEnunciado() {
         System.out.println("""
                 - Exercicio 12 
                 Crie um programa que converta uma quantia em dólares para outra moeda,
@@ -19,7 +21,11 @@ public class Exercicio12 implements Exercicio {
                 de câmbio atual. Em seguida, calcule e exiba o valor convertido.
                 Solução:
                                 """);
+    }
 
+    @Override
+    public void resolve() {
+        exibeEnunciado();
         System.out.println("Você quer converter o dólar em que moeda?");
         String moeda = scanner.nextLine();
         System.out.println("Insira a quantia de dólar a ser convertida:");

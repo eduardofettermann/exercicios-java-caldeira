@@ -14,7 +14,7 @@ public class Exercicio04 implements Exercicio {
     private final DecimalFormat FORMATO_DECIMAL = new DecimalFormat("0.0");
 
     @Override
-    public void resolve() {
+    public void exibeEnunciado() {
         System.out.println("""
                 - Exercicio 04 
                 Crie um programa que leia o valor do salário mínimo e o valor do salário de um usuário,
@@ -22,6 +22,11 @@ public class Exercicio04 implements Exercicio {
                 assuma que o salário mínimo é R$1.320.
                 Solução:
                 """);
+    }
+
+    @Override
+    public void resolve() {
+        exibeEnunciado();
         System.out.println("Digite seu salário:");
         Double salarioDigitado = scanner.nextDouble();
         Double salariosMinimosPorSalario = salarioDigitado / SALARIO_MINIMO;
@@ -30,4 +35,6 @@ public class Exercicio04 implements Exercicio {
 
         menu.exibeMenuFinal();
     }
+
+
 }

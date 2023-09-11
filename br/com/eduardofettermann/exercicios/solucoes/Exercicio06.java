@@ -1,4 +1,5 @@
 package br.com.eduardofettermann.exercicios.solucoes;
+
 import br.com.eduardofettermann.exercicios.model.Exercicio;
 
 //    Exercicio 06
@@ -11,7 +12,7 @@ import br.com.eduardofettermann.exercicios.model.Exercicio;
 public class Exercicio06 implements Exercicio {
 
     @Override
-    public void resolve() {
+    public void exibeEnunciado() {
         System.out.println("""
                 - Exercicio 06
                 Escreva um programa que leia a idade do usuário e imprima respostas diferentes dependendo do número colocado:
@@ -21,7 +22,11 @@ public class Exercicio06 implements Exercicio {
                 IV - De 18 até 65, é obrigatório votar.
                 Solução:
                             """);
+    }
 
+    @Override
+    public void resolve() {
+        exibeEnunciado();
         System.out.println("Digite sua idade:");
         int idadeDigitada = scanner.nextInt();
         if (idadeDigitada < 16) {

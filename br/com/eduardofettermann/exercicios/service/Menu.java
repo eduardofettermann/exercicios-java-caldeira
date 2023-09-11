@@ -9,6 +9,7 @@ public class Menu {
     Scanner scanner = new Scanner(System.in);
     Exercicio exercicio01 = new Exercicio01();
     Exercicio exercicio02 = new Exercicio02();
+    Exercicio exercicio03 = new Exercicio03();
     Exercicio exercicio04 = new Exercicio04();
     Exercicio exercicio05 = new Exercicio05();
     Exercicio exercicio06 = new Exercicio06();
@@ -26,16 +27,18 @@ public class Menu {
                     Você quer ver a solução de qual exercício?
                     1 - Exercicio 1         8 - Exercicio 8
                     2 - Exercicio 2         9 - Exercicio 9
-                    4 - Exercicio 4         10 - Exercicio 10
-                    5 - Exercicio 5         11 - Exercicio 11
-                    6 - Exercicio 6         12 - Exercicio 12
-                    7 - Exercicio 7         13 - Exercicio 13
+                    3 - Exercicio 3         10 - Exercicio 10
+                    4 - Exercicio 4         11 - Exercicio 11
+                    5 - Exercicio 5         12 - Exercicio 12
+                    6 - Exercicio 6         13 - Exercicio 13
+                    7 - Exercicio 7         
                     """);
             int resposta = scanner.nextInt();
 
             switch (resposta) {
                 case (1) -> exercicio01.resolve();
                 case (2) -> exercicio02.resolve();
+                case (3) -> exercicio03.resolve();
                 case (4) -> exercicio04.resolve();
                 case (5) -> exercicio05.resolve();
                 case (6) -> exercicio06.resolve();
@@ -48,7 +51,8 @@ public class Menu {
                 case (13) -> exercicio13.resolve();
             }
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro: " + e);
+            System.out.println("Ocorreu um erro: " + e + "\n" +
+                    "Se o problema persistir tente novamente mais tarde!");
         }
     }
 
@@ -66,7 +70,8 @@ public class Menu {
                 case (2) -> System.out.println("Finalizado!");
             }
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro: " + e);
+            System.out.println("Ocorreu um erro: " + e + "\n" + "Tente digitar apenas número inteiros de 1 a 2, " +
+                    "se o problema persistir tente novamente mais tarde!");
         }
     }
 }
