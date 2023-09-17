@@ -17,6 +17,7 @@ public class Exercicio01Lista2 implements Exercicio {
 
     @Override
     public void resolve() {
+        exibeEnunciado();
         System.out.println("Digite dois números inteiros que eu retornarei todos números inteiros no intervalo deles");
         System.out.println("Digite o primeiro número:");
         int nPrimeiro = scanner.nextInt();
@@ -74,5 +75,6 @@ public class Exercicio01Lista2 implements Exercicio {
             }
             arrayDePrimos.forEach(System.out::println);
         }
+        menu.exibeMenuFinal();
     }
 }
