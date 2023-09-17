@@ -5,7 +5,11 @@ import br.com.eduardofettermann.exercicios.model.Exercicio;
 public class Exercicio05Lista2 implements Exercicio {
     @Override
     public void exibeEnunciado() {
-        Exercicio.super.exibeEnunciado();
+        System.out.println("""
+                - Exercicio 05 
+                Escreva um programa que separa a string em duas metades e imprime a primeira parte.
+                Solução:
+                """);
     }
 
     @Override
