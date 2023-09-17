@@ -8,7 +8,13 @@ public interface Exercicio {
     Scanner scanner = new Scanner(System.in);
     Menu menu = new Menu();
 
-    void exibeEnunciado();
+    default void exibeEnunciado(){
+        System.out.println("""
+                - Exercicio 01 
+                Crie um programa que leia seu nome e imprima na tela.
+                Solução:
+                """);
+    };
     void resolve();
 
 }
