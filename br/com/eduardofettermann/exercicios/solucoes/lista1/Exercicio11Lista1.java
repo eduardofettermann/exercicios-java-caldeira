@@ -32,7 +32,6 @@ public class Exercicio11Lista1 implements Exercicio {
             }
         }
         System.out.println("A String passada tem " + contadorDeVogais + " vogais!");
-
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
 }

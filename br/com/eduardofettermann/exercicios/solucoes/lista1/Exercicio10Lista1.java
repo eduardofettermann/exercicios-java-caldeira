@@ -27,7 +27,6 @@ public class Exercicio10Lista1 implements Exercicio {
         double valorEmCelsius = scanner.nextDouble();
         double valorEmFahrenheit = (valorEmCelsius * 9 / 5) + 32;
         System.out.println("O valor em Fahrenheit é " + valorEmFahrenheit);
-
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
 }

@@ -22,7 +22,6 @@ public class Exercicio01Lista1 implements Exercicio {
         System.out.println("Digite seu nome;");
         String nomeDigitado = scanner.nextLine();
         System.out.println(nomeDigitado);
-
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
 }

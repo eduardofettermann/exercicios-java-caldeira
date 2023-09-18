@@ -28,13 +28,10 @@ public class Exercicio04Lista1 implements Exercicio {
     public void resolve() {
         exibeEnunciado();
         System.out.println("Digite seu salário:");
-        Double salarioDigitado = scanner.nextDouble();
-        Double salariosMinimosPorSalario = salarioDigitado / SALARIO_MINIMO;
+        double salarioDigitado = scanner.nextDouble();
+        double salariosMinimosPorSalario = salarioDigitado / SALARIO_MINIMO;
         String salariosMinimosPorSalarioArredondado = FORMATO_DECIMAL.format(salariosMinimosPorSalario);
         System.out.println("O seu salário é equivalente a " + salariosMinimosPorSalarioArredondado + " salários mínimos!");
-
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
-
-
 }

@@ -26,7 +26,6 @@ public class Exercicio09Lista1 implements Exercicio {
         int anoDigitado = scanner.nextInt();
         int idade = anoAtual - anoDigitado;
         System.out.println("Sua idade é " + idade + " anos!");
-
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
 }

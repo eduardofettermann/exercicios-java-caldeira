@@ -30,6 +30,6 @@ public class Exercicio07Lista1 implements Exercicio {
         } else {
             System.out.println("Você não pode comprar um automovel");
         }
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
 }

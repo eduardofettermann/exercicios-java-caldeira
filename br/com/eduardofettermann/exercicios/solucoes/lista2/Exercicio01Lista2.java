@@ -75,6 +75,6 @@ public class Exercicio01Lista2 implements Exercicio {
             }
             arrayDePrimos.forEach(System.out::println);
         }
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
 }

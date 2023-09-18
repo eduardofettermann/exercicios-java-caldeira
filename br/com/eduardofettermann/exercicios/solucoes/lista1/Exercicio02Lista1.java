@@ -1,4 +1,5 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista1;
+
 import br.com.eduardofettermann.exercicios.model.Exercicio;
 
 //Exercicio 02
@@ -22,9 +23,6 @@ public class Exercicio02Lista1 implements Exercicio {
         System.out.println("Digite o segundo número inteiro:");
         int segundoNumero = scanner.nextInt();
         System.out.println("Os números digitados foram: " + primeroNumero + " e " + segundoNumero);
-
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
-
-
 }

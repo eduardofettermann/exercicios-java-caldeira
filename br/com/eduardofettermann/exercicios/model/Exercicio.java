@@ -16,6 +16,18 @@ public interface Exercicio {
                 """);
     }
     void resolve();
-
+    default void resolveNovamente(){
+        System.out.println("""
+                Você deseja executar a solução novamente?
+                1 - Sim
+                
+                0 - Não
+                """);
+        int respostaDigitada = scanner.nextInt();
+        switch (respostaDigitada) {
+            case (1) -> this.resolve();
+            case (0) -> menu.exibeMenuFinal();
+        }
+    }
 }
 

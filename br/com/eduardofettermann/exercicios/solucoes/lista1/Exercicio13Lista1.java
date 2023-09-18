@@ -30,7 +30,6 @@ public class Exercicio13Lista1 implements Exercicio {
             fatorial *= (numero - i);
         }
         System.out.println("O fatorial de " + numero + " é igual a " + fatorial);
-
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
 }

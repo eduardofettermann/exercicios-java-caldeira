@@ -36,6 +36,6 @@ public class Exercicio06Lista1 implements Exercicio {
         } else if (idadeDigitada >= 18 & idadeDigitada <= 65) {
             System.out.println("Seu voto é obrigatório!");
         }
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
 }

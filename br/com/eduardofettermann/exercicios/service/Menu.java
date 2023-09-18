@@ -33,7 +33,8 @@ public class Menu {
             System.out.println("""
                     Você quer ver a solução de qual lista?
                     1 - Lista 1         2 - Lista 2
-                    0 - Sair    
+                    
+                    0 - Sair
                     """);
             int resposta = scanner.nextInt();
 
@@ -54,12 +55,13 @@ public class Menu {
             System.out.println("""
                     Você quer ver outra solução ou sair?
                     1 - Ver outro exercício
-                    2 - Sair
+                    
+                    0 - Sair
                     """);
             int opcao = scanner.nextInt();
             switch (opcao) {
                 case (1) -> menu.exibeMenuInicial();
-                case (2) -> System.out.println("Finalizado!");
+                case (0) -> System.out.println("Finalizado!");
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" + "Tente digitar apenas número inteiros de 1 a 2, " +
@@ -77,7 +79,7 @@ public class Menu {
                     4 - Exercicio 4         11 - Exercicio 11
                     5 - Exercicio 5         12 - Exercicio 12
                     6 - Exercicio 6         13 - Exercicio 13
-                    7 - Exercicio 7   
+                    7 - Exercicio 7
                                         
                     0 - Voltar     
                     """);

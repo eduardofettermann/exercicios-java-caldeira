@@ -36,9 +36,6 @@ public class Exercicio05Lista1 implements Exercicio {
         int horaAtualEmSegundos = horasEmSegundos + minutosEmSegundos + segundo;
         int segundosParaMeiaNoite = MEIA_NOITE_EM_SEGUNDOS - horaAtualEmSegundos;
         System.out.println("Se passaram " + horaAtualEmSegundos + " segundos desde 00:00 e faltam " + segundosParaMeiaNoite + " segundos para meia-noite.");
-
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
-
-
 }

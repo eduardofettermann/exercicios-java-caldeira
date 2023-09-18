@@ -35,15 +35,6 @@ public class Exercicio04Lista2 implements Exercicio {
             case (3) -> System.out.printf("%.2f * %.2f = %.2f \n", nPrimeiro, nSegundo, (nPrimeiro * nSegundo));
             case (4) -> System.out.printf("%.2f / %.2f = %.2f \n", nPrimeiro, nSegundo, (nPrimeiro / nSegundo));
         }
-        System.out.println("""
-                Você deseja continuar?
-                1 - Sim
-                0 - Não
-                """);
-        int respostaDigitada = scanner.nextInt();
-        switch (respostaDigitada) {
-            case (1) -> resolve();
-            case (0) -> menu.exibeMenuFinal();
-        }
+        resolveNovamente();
     }
 }

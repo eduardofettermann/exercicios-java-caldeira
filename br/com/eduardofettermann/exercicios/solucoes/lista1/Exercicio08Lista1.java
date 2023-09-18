@@ -36,6 +36,6 @@ public class Exercicio08Lista1 implements Exercicio {
         } else {
             System.out.println("Você tem direito a fila prioritária!");
         }
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
 }

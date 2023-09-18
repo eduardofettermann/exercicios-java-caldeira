@@ -35,7 +35,6 @@ public class Exercicio12Lista1 implements Exercicio {
         double dolarConvertido = quantiaDeDolar * taxaDoCambio;
         String dolarArredondado = FORMATO_DECIMAL.format(dolarConvertido);
         System.out.println(quantiaDeDolar + " dolar(es)" + " = " + dolarArredondado + " em " + moeda);
-
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
 }

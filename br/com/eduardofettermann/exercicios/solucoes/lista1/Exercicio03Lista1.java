@@ -42,7 +42,6 @@ public class Exercicio03Lista1 implements Exercicio {
         System.out.println("O maior número é " + maior);
         System.out.println("O menor número é " + menor);
         System.out.println("A média aritmética é " + mediaAritmeticaConvertida);
-
-        menu.exibeMenuFinal();
+        resolveNovamente();
     }
 }
