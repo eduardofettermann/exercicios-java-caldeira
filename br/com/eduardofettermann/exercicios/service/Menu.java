@@ -3,6 +3,8 @@ package br.com.eduardofettermann.exercicios.service;
 import br.com.eduardofettermann.exercicios.model.Exercicio;
 import br.com.eduardofettermann.exercicios.solucoes.lista1.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista2.*;
+import br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio01Lista3.Exercicio01Lista3;
+import br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio02Lista3.service.Exercicio02Lista3;
 
 import java.util.Scanner;
 
@@ -21,6 +23,7 @@ public class Menu {
     Exercicio exercicio11Lista1 = new Exercicio11Lista1();
     Exercicio exercicio12Lista1 = new Exercicio12Lista1();
     Exercicio exercicio13Lista1 = new Exercicio13Lista1();
+
     Exercicio exercicio01Lista2 = new Exercicio01Lista2();
     Exercicio exercicio04Lista2 = new Exercicio04Lista2();
     Exercicio exercicio05Lista2 = new Exercicio05Lista2();
@@ -28,11 +31,16 @@ public class Menu {
     Exercicio exercicio07Lista2 = new Exercicio07Lista2();
 
 
+    Exercicio exercicio01Lista3 = new Exercicio01Lista3();
+    Exercicio exercicio02Lista3 = new Exercicio02Lista3();
+
+
     public void exibeMenuInicial() {
         try {
             System.out.println("""
                     Você quer ver a solução de qual lista?
                     1 - Lista 1         2 - Lista 2
+                    3 - Lista 3
                     
                     0 - Sair
                     """);
@@ -41,6 +49,7 @@ public class Menu {
             switch (resposta) {
                 case (1) -> exibeMenuLista1();
                 case (2) -> exibeMenuLista2();
+                case (3) -> exibeMenuLista3();
                 case (0) -> System.out.println("Encerrando...");
             }
         } catch (Exception e) {
@@ -126,6 +135,27 @@ public class Menu {
                 case (5) -> exercicio05Lista2.resolve();
                 case (6) -> exercicio06Lista2.resolve();
                 case (7) -> exercicio07Lista2.resolve();
+            }
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro: " + e + "\n" +
+                    "Se o problema persistir tente novamente mais tarde!");
+        }
+    }
+    public void exibeMenuLista3() {
+        try {
+            System.out.println("""
+                    Você quer ver a solução de qual exercício?
+                    1 - Exercicio 1 (Conta Bancária)
+                    2 - Exercicio 2 (Círculo)
+                          
+                    0 - Voltar
+                    """);
+            int resposta = scanner.nextInt();
+
+            switch (resposta) {
+                case (0) -> exibeMenuInicial();
+                case (1) -> exercicio01Lista3.resolve();
+                case (2) -> exercicio02Lista3.resolve();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" +
