@@ -10,7 +10,7 @@ public interface Exercicio {
 
     default void exibeEnunciado(){
         System.out.println("""
-                - Exercicio 01 
+                - Exercicio 01
                 Crie um programa que leia seu nome e imprima na tela.
                 Solução:
                 """);
