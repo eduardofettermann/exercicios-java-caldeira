@@ -1,4 +1,4 @@
-package br.com.eduardofettermann.exercicios.solucoes.lista4;
+package br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio02lista4.service;
 
 import br.com.eduardofettermann.exercicios.model.Exercicio;
 
@@ -29,7 +29,10 @@ public class Exercicio02Lista4 implements Exercicio {
 
     @Override
     public void resolve() {
-
+        exibeEnunciado();
+        MenuExercicio02Lista4 menu = new MenuExercicio02Lista4();
+        menu.exibeMenuInicial();
+        resolveNovamente();
     }
 
     @Override

@@ -5,6 +5,9 @@ import br.com.eduardofettermann.exercicios.solucoes.lista1.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista2.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio01Lista3.Exercicio01Lista3;
 import br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio02Lista3.service.Exercicio02Lista3;
+import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio03lista4.service.Exercicio03Lista4;
+import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio01lista4.service.Exercicio01Lista4;
+import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio02lista4.service.Exercicio02Lista4;
 
 import java.util.Scanner;
 
@@ -34,15 +37,19 @@ public class Menu {
     Exercicio exercicio01Lista3 = new Exercicio01Lista3();
     Exercicio exercicio02Lista3 = new Exercicio02Lista3();
 
+    Exercicio exercicio01Lista4 = new Exercicio01Lista4();
+    Exercicio exercicio02Lista4 = new Exercicio02Lista4();
+    Exercicio exercicio03Lista4 = new Exercicio03Lista4();
+
 
     public void exibeMenuInicial() {
         try {
             System.out.println("""
                     Você quer ver a solução de qual lista?
                     1 - Lista 1         2 - Lista 2
-                    3 - Lista 3
+                    3 - Lista 3         4 - Lista 4
                     
-                    0 - Sair
+                    0 - Encerrar
                     """);
             int resposta = scanner.nextInt();
 
@@ -50,11 +57,15 @@ public class Menu {
                 case (1) -> exibeMenuLista1();
                 case (2) -> exibeMenuLista2();
                 case (3) -> exibeMenuLista3();
+                case (4) -> exibeMenuLista4();
                 case (0) -> System.out.println("Encerrando...");
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" +
                     "Se o problema persistir tente novamente mais tarde!");
+        }
+        finally {
+            scanner.close();
         }
     }
 
@@ -65,16 +76,18 @@ public class Menu {
                     Você quer ver outra solução ou sair?
                     1 - Ver outro exercício
                     
-                    0 - Sair
+                    0 - Encerrar
                     """);
             int opcao = scanner.nextInt();
             switch (opcao) {
                 case (1) -> menu.exibeMenuInicial();
-                case (0) -> System.out.println("Finalizado!");
+                case (0) -> System.out.println("Encerrando...");
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" + "Tente digitar apenas número inteiros de 1 a 2, " +
                     "se o problema persistir tente novamente mais tarde!");
+        } finally {
+            scanner.close();
         }
     }
 
@@ -90,7 +103,7 @@ public class Menu {
                     6 - Exercicio 6         13 - Exercicio 13
                     7 - Exercicio 7
                                         
-                    0 - Voltar     
+                    0 - Voltar
                     """);
             int resposta = scanner.nextInt();
 
@@ -156,6 +169,30 @@ public class Menu {
                 case (0) -> exibeMenuInicial();
                 case (1) -> exercicio01Lista3.resolve();
                 case (2) -> exercicio02Lista3.resolve();
+            }
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro: " + e + "\n" +
+                    "Se o problema persistir tente novamente mais tarde!");
+        }
+    }
+
+    public void exibeMenuLista4() {
+        try {
+            System.out.println("""
+                    Você quer ver a solução de qual exercício?
+                    1 - Exercicio 1 (Veículo)
+                    2 - Exercicio 2 (Figuras geométricas)
+                    3 - Exercicio 3 (Sistema de Tributação para Contas e Bens Financeiros)
+                          
+                    0 - Voltar
+                    """);
+            int resposta = scanner.nextInt();
+
+            switch (resposta) {
+                case (0) -> exibeMenuInicial();
+                case (1) -> exercicio01Lista4.resolve();
+                case (2) -> exercicio02Lista4.resolve();
+                case (3) -> exercicio03Lista4.resolve();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" +

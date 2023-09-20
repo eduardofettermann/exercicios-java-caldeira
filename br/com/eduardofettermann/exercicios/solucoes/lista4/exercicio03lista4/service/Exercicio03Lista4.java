@@ -1,4 +1,4 @@
-package br.com.eduardofettermann.exercicios.solucoes.lista4;
+package br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio03lista4.service;
 
 import br.com.eduardofettermann.exercicios.model.Exercicio;
 
@@ -32,7 +32,8 @@ public class Exercicio03Lista4 implements Exercicio {
 
     @Override
     public void resolve() {
-
+        exibeEnunciado();
+        resolveNovamente();
     }
 
     @Override

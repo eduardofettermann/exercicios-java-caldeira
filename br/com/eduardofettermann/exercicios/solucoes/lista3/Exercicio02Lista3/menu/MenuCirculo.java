@@ -76,30 +76,4 @@ public class MenuCirculo {
     public void exibeMenuDecimais() {
         System.out.println("Digite quantas casas decimais você quer que tenham nos números!");
     }
-
-//    public int exibeMenuUnidadeDeMedida(){
-//        System.out.println("""
-//                Você deseja utilizar qual unidade de medida??
-//                1 - mm        2 - cm
-//                3 - dm        4 - m
-//                5 - dam       6 - hm
-//                7 - km
-//
-//                0 - Sair
-//                """);
-//
-//        int intDigitado = SC.nextInt();
-//        String unidadeDeMedida;
-//        switch (intDigitado) {
-//            case (1) -> unidadeDeMedida = "mm";
-//            case (2) -> unidadeDeMedida = "cm";
-//            case (3) -> unidadeDeMedida = "dm";
-//            case (4) -> unidadeDeMedida = "m";
-//            case (5) -> unidadeDeMedida = "dam";
-//            case (6) -> unidadeDeMedida = "hm";
-//            case (7) -> unidadeDeMedida = "km";
-//            case (0) -> exibeMenuNovoCirculo();
-//            }
-//        }
-//    }
 }

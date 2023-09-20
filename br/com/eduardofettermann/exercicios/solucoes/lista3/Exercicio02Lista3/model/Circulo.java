@@ -6,7 +6,6 @@ public class Circulo {
     private double circunferencia;
     private double diametro;
     private int casasDecimais;
-    private String unidadeDeMedida;
     private final double PI = Math.PI;
 
     public double calculaAreaPeloRaio(double raio) {
@@ -67,10 +66,6 @@ public class Circulo {
 
     public void setCasasDecimais(int casasDecimais) {
         this.casasDecimais = casasDecimais;
-    }
-
-    public void setUnidadeDeMedida(String unidadeDeMedida) {
-        this.unidadeDeMedida = unidadeDeMedida;
     }
 
     //Getters
