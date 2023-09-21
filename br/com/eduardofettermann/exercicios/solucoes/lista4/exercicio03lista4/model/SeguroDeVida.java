@@ -9,10 +9,19 @@ public class SeguroDeVida implements Tributavel {
     }
 
     public double retornaSaldoLiquido() {
-        return this.saldo - 42;
+        return (this.saldo - retornaTributos());
+    }
+
+    @Override
+    public double retornaSaldoBruto() {
+        return this.getSaldo();
     }
 
     public SeguroDeVida(double saldo) {
         this.saldo = saldo;
+    }
+
+    public double getSaldo() {
+        return saldo;
     }
 }

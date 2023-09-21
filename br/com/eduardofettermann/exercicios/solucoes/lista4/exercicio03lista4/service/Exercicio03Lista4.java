@@ -33,6 +33,8 @@ public class Exercicio03Lista4 implements Exercicio {
     @Override
     public void resolve() {
         exibeEnunciado();
+        MenuExercicio03Lista4 menu = new MenuExercicio03Lista4();
+        menu.exibeMenuInicial();
         resolveNovamente();
     }
 

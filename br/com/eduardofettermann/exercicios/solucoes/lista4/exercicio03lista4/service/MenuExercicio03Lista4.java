@@ -17,61 +17,113 @@ public class MenuExercicio03Lista4 {
 
     public void exibeMenuInicial() {
         System.out.println("Este programa calculará qual seu saldo total e seu total de impostos!");
-        exibeMenuDeContas();
+        int resposta = exibeMenuDeContas();
+        switch (resposta) {
+            case (1) -> exibeMenuContaCorrente();
+            case (2) -> exibeMenuContaPoupanca();
+            case (3) -> exibeMenuSeguroDeVida();
+        }
     }
 
-    public void exibeMenuDeContas() {
+    public void exibeMenuContinuaSomando(){
+        int resposta = exibeMenuDeContas();
+        switch (resposta) {
+            case (1) -> exibeMenuContaCorrente();
+            case (2) -> exibeMenuContaPoupanca();
+            case (3) -> exibeMenuSeguroDeVida();
+        }
+    }
+
+    public int exibeMenuDeContas() {
         System.out.println("""
                 Digite a opção que você deseja adicionar ao cálculo:
                                 
                 1 - Conta Corrente      2 - Conta Poupança
                 3 - Seguro de Vida
                 """);
+        int resposta = scanner.nextInt();
+        return resposta;
     }
 
-    public void MenuContaCorrente() {
+    public void exibeMenuContaCorrente() {
         System.out.println("Digite o saldo de sua conta:");
         double saldo = scanner.nextDouble();
         ContaCorrente contaCorrente = new ContaCorrente(saldo);
-        adicionaNasArrays("Conta Corrente",contaCorrente.retornaTributos(),contaCorrente.getSaldo());
+        adicionaNasArrays("Conta Corrente",
+                contaCorrente.retornaSaldoBruto(),
+                contaCorrente.retornaTributos(),
+                contaCorrente.retornaSaldoLiquido());
+        exibePerguntaFinal();
     }
 
-    public void MenuContaPoupanca() {
+    public void exibeMenuContaPoupanca() {
         System.out.println("Digite o saldo de sua conta:");
         double saldo = scanner.nextDouble();
         ContaPoupanca contaPoupanca = new ContaPoupanca(saldo);
-        adicionaNasArrays("Conta Poupança",contaPoupanca.retornaTributos(),contaPoupanca.getSaldo());
+        adicionaNasArrays("Conta Poupança",
+                contaPoupanca.retornaSaldoBruto(),
+                contaPoupanca.retornaTributos(),
+                contaPoupanca.retornaSaldoLiquido());
+        exibePerguntaFinal();
     }
-    public void MenuSeguroDeVida() {
+
+    public void exibeMenuSeguroDeVida() {
         System.out.println("Digite o saldo de sua conta:");
         double saldo = scanner.nextDouble();
         SeguroDeVida seguroDeVida = new SeguroDeVida(saldo);
-        adicionaNasArrays("Seguro de Vida",seguroDeVida.retornaTributos(),seguroDeVida.getSaldo());
+        adicionaNasArrays("Seguro de Vida",
+                seguroDeVida.retornaSaldoBruto(),
+                seguroDeVida.retornaTributos(),
+                seguroDeVida.retornaSaldoLiquido());
+        exibePerguntaFinal();
     }
 
     public void exibeTodasContas() {
         for (int j = 0; j < calculaveis.size(); j++) {
             System.out.printf("""
                     %s
+                    Saldo Bruto: %.2f
                     Impostos: %.2f
                     Saldo líquido: %.2f
-                    
-                    """,calculaveis.get(j), impostos.get(j), saldosBrutos.get(j));
+                                  
+                    """, calculaveis.get(j),saldosBrutos.get(j), impostos.get(j), saldosLiquidos.get(j));
         }
+
         double totalImpostos = 0;
         double totalBruto = 0;
         double totalLiquido = 0;
         for (int j = 0; j < impostos.size(); j++) {
-            totalImpostos+= impostos.get(j);
-            totalBruto+= saldosBrutos.get(j);
-            totalLiquido+= saldosBrutos.get(j) - impostos.get(j);
+            totalImpostos += impostos.get(j);
+            totalBruto += saldosBrutos.get(j);
+            totalLiquido += saldosLiquidos.get(j);
         }
+
+        System.out.printf("""
+                    Saldo bruto total: %.2f
+                    Impostos totais: %.2f
+                    Saldo Líquido total: %.2f
+                    """,totalBruto,totalImpostos,totalLiquido);
     }
 
-    public void adicionaNasArrays(String nome, double imposto, double saldoLiquido){
+    public void adicionaNasArrays(String nome, double saldoBruto, double imposto, double saldoLiquido) {
         calculaveis.add(nome);
         impostos.add(imposto);
-        saldosBrutos.add(saldoLiquido);
+        saldosLiquidos.add(saldoLiquido);
+        saldosBrutos.add(saldoBruto);
+    }
+
+    public void exibePerguntaFinal() {
+        System.out.println("""
+                Você deseja adicionar mais alguma conta ao cálculo?
+                1 - Sim
+                    
+                0 - Não, imprimir resultado
+                """);
+        int resposta = scanner.nextInt();
+        switch (resposta) {
+            case (0) -> exibeTodasContas();
+            case (1) -> exibeMenuContinuaSomando();
+        }
     }
 }
 

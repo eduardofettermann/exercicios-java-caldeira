@@ -3,8 +3,7 @@ package br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio03lista4.mo
 import java.time.LocalTime;
 
 public class Conta {
-    private double saldo = 200;
-
+    private double saldo;
     public void saca(double valor) {
         if (getSaldo() < valor) {
             System.out.println("\nVocê não tem saldo suficiente!\n");
@@ -23,15 +22,16 @@ public class Conta {
         System.out.printf("\nO seu saldo atual é %.2f\n", getSaldo());
     }
 
-    public Conta(double saldo) {
-        this.saldo = saldo;
-    }
-
     public double getSaldo() {
         return saldo;
     }
 
     public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+
+    public Conta(double saldo) {
         this.saldo = saldo;
     }
 }
