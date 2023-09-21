@@ -15,6 +15,4 @@ public class SeguroDeVida implements Tributavel {
     public SeguroDeVida(double saldo) {
         this.saldo = saldo;
     }
-
-
 }
