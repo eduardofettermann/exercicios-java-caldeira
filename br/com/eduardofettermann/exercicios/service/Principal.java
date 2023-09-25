@@ -1,8 +1,8 @@
 package br.com.eduardofettermann.exercicios.service;
 
 public class Principal {
-    private static Menu menu = new Menu();
+    private static final Menu MENU = new Menu();
     public static void main(String[]args) {
-        menu.exibeMenuInicial();
+        MENU.exibeMenuInicial();
     }
 }

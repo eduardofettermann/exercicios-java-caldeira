@@ -8,6 +8,7 @@ import br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio02Lista3.ser
 import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio03lista4.service.Exercicio03Lista4;
 import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio01lista4.service.Exercicio01Lista4;
 import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio02lista4.service.Exercicio02Lista4;
+import br.com.eduardofettermann.exercicios.solucoes.lista5.Exercicio01Lista5;
 
 import java.util.Scanner;
 
@@ -40,6 +41,7 @@ public class Menu {
     Exercicio exercicio01Lista4 = new Exercicio01Lista4();
     Exercicio exercicio02Lista4 = new Exercicio02Lista4();
     Exercicio exercicio03Lista4 = new Exercicio03Lista4();
+    Exercicio exercicio01Lista5 = new Exercicio01Lista5();
 
 
     public void exibeMenuInicial() {
@@ -48,6 +50,7 @@ public class Menu {
                     Você quer ver a solução de qual lista?
                     1 - Lista 1         2 - Lista 2
                     3 - Lista 3         4 - Lista 4
+                    5 - Lista 5
                     
                     0 - Encerrar
                     """);
@@ -58,6 +61,7 @@ public class Menu {
                 case (2) -> exibeMenuLista2();
                 case (3) -> exibeMenuLista3();
                 case (4) -> exibeMenuLista4();
+                case (5) -> exibeMenuLista5();
                 case (0) -> System.out.println("Encerrando...");
             }
         } catch (Exception e) {
@@ -193,6 +197,29 @@ public class Menu {
                 case (1) -> exercicio01Lista4.resolve();
                 case (2) -> exercicio02Lista4.resolve();
                 case (3) -> exercicio03Lista4.resolve();
+            }
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro: " + e + "\n" +
+                    "Se o problema persistir tente novamente mais tarde!");
+        }
+    }public void exibeMenuLista5() {
+        try {
+            System.out.println("""
+                    Você quer ver a solução de qual exercício?
+                    1 - Exercicio 1
+                    2 - Exercicio 2 (Não solucionado)
+                    3 - Exercicio 3 (Não solucionado)
+                    4 - Exercicio 4 (Não solucionado)
+                    5 - Exercicio 5 (Não solucionado)
+                    6 - Exercicio 6 (Não solucionado)
+                          
+                    0 - Voltar
+                    """);
+            int resposta = scanner.nextInt();
+
+            switch (resposta) {
+                case (0) -> exibeMenuInicial();
+                case (1) -> exercicio01Lista5.resolve();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" +
