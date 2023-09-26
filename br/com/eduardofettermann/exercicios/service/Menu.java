@@ -12,6 +12,7 @@ import br.com.eduardofettermann.exercicios.solucoes.lista5.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio03lista5.service.Exercicio03Lista5;
 import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio04lista5.service.Exercicio04Lista5;
 import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio05lista5.service.Exercicio05Lista5;
+import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio06lista05.service.Exercicio06Lista5;
 
 import java.util.Scanner;
 
@@ -219,7 +220,7 @@ public class Menu {
                     3 - Exercicio 3 - Lista de Tarefas
                     4 - Exercicio 4 - Lista de Compras
                     5 - Exercicio 5 - Fila de Impressão
-                    6 - Exercicio 6 (Não solucionado)
+                    6 - Exercicio 6 - Sistema de Reservas
                           
                     0 - Voltar
                     """);
