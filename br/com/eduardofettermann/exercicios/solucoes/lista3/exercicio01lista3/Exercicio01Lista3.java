@@ -1,4 +1,4 @@
-package br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio01Lista3;
+package br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio01lista3;
 
 import br.com.eduardofettermann.exercicios.model.Exercicio;
 

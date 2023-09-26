@@ -3,13 +3,13 @@ package br.com.eduardofettermann.exercicios.service;
 import br.com.eduardofettermann.exercicios.model.Exercicio;
 import br.com.eduardofettermann.exercicios.solucoes.lista1.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista2.*;
-import br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio01Lista3.Exercicio01Lista3;
-import br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio02Lista3.service.Exercicio02Lista3;
+import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio01lista3.Exercicio01Lista3;
+import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio02lista3.service.Exercicio02Lista3;
 import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio03lista4.service.Exercicio03Lista4;
 import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio01lista4.service.Exercicio01Lista4;
 import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio02lista4.service.Exercicio02Lista4;
-import br.com.eduardofettermann.exercicios.solucoes.lista5.Exercicio01Lista5;
-import br.com.eduardofettermann.exercicios.solucoes.lista5.Exercicio02Lista5;
+import br.com.eduardofettermann.exercicios.solucoes.lista5.*;
+import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio03lista5.service.Exercicio03Lista5;
 
 import java.util.Scanner;
 
@@ -44,10 +44,10 @@ public class Menu {
     Exercicio exercicio03Lista4 = new Exercicio03Lista4();
     Exercicio exercicio01Lista5 = new Exercicio01Lista5();
     Exercicio exercicio02Lista5 = new Exercicio02Lista5();
-    Exercicio exercicio03Lista5 = new Exercicio02Lista5();
-    Exercicio exercicio04Lista5 = new Exercicio02Lista5();
-    Exercicio exercicio05Lista5 = new Exercicio02Lista5();
-    Exercicio exercicio06Lista5 = new Exercicio02Lista5();
+    Exercicio exercicio03Lista5 = new Exercicio03Lista5();
+    Exercicio exercicio04Lista5 = new Exercicio04Lista5();
+    Exercicio exercicio05Lista5 = new Exercicio05Lista5();
+    Exercicio exercicio06Lista5 = new Exercicio06Lista5();
 
 
     public void exibeMenuInicial() {
@@ -214,7 +214,7 @@ public class Menu {
                     Você quer ver a solução de qual exercício?
                     1 - Exercicio 1
                     2 - Exercicio 2
-                    3 - Exercicio 3 (Não solucionado)
+                    3 - Exercicio 3
                     4 - Exercicio 4 (Não solucionado)
                     5 - Exercicio 5 (Não solucionado)
                     6 - Exercicio 6 (Não solucionado)

@@ -1,4 +1,4 @@
-package br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio02Lista3.model;
+package br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio02lista3.model;
 
 public class Circulo {
     private double raio;
