@@ -1,6 +1,6 @@
-package br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio02Lista3.menu;
+package br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio02lista3.menu;
 
-import br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio02Lista3.model.Circulo;
+import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio02lista3.model.Circulo;
 
 import java.util.Scanner;
 

@@ -1,7 +1,7 @@
-package br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio02Lista3.service;
+package br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio02lista3.service;
 
 import br.com.eduardofettermann.exercicios.model.Exercicio;
-import br.com.eduardofettermann.exercicios.solucoes.lista3.Exercicio02Lista3.menu.MenuCirculo;
+import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio02lista3.menu.MenuCirculo;
 
 public class Exercicio02Lista3 implements Exercicio {
 
