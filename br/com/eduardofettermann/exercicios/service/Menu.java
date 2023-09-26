@@ -217,7 +217,7 @@ public class Menu {
                     2 - Exercicio 2 - Procura número na array
                     3 - Exercicio 3 - Lista de Tarefas
                     4 - Exercicio 4 - Lista de Compras
-                    5 - Exercicio 5 (Não solucionado)
+                    5 - Exercicio 5 - Fila de Impressão
                     6 - Exercicio 6 (Não solucionado)
                           
                     0 - Voltar
