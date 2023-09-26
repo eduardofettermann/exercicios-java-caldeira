@@ -13,7 +13,7 @@ public class Exercicio01Lista5 implements Exercicio {
     @Override
     public void exibeEnunciado() {
         System.out.println("""
-                - Exercicio 01
+                - Exercicio 01 - Uso de Array
                 Descrição: Crie um programa Java que peça ao usuário para inserir 5 números inteiros
                  e armazene-os em um array. Em seguida, calcule e exiba a soma e a média dos números inseridos.
                 Solução:
