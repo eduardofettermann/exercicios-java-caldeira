@@ -10,6 +10,7 @@ import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio01lista4.ser
 import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio02lista4.service.Exercicio02Lista4;
 import br.com.eduardofettermann.exercicios.solucoes.lista5.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio03lista5.service.Exercicio03Lista5;
+import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio04lista5.service.Exercicio04Lista5;
 
 import java.util.Scanner;
 
@@ -212,10 +213,10 @@ public class Menu {
         try {
             System.out.println("""
                     Você quer ver a solução de qual exercício?
-                    1 - Exercicio 1
-                    2 - Exercicio 2
-                    3 - Exercicio 3
-                    4 - Exercicio 4 (Não solucionado)
+                    1 - Exercicio 1 - Média e Soma da array
+                    2 - Exercicio 2 - Procura número na array
+                    3 - Exercicio 3 - Lista de Tarefas
+                    4 - Exercicio 4 - Lista de Compras
                     5 - Exercicio 5 (Não solucionado)
                     6 - Exercicio 6 (Não solucionado)
                           
