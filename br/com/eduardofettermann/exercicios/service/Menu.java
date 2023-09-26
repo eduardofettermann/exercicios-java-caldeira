@@ -11,6 +11,7 @@ import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio02lista4.ser
 import br.com.eduardofettermann.exercicios.solucoes.lista5.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio03lista5.service.Exercicio03Lista5;
 import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio04lista5.service.Exercicio04Lista5;
+import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio05lista5.service.Exercicio05Lista5;
 
 import java.util.Scanner;
 
