@@ -1,4 +1,5 @@
 package br.com.eduardofettermann.exercicios.service;
+
 public class Principal {
     private static final Menu MENU = new Menu();
 

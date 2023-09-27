@@ -1,6 +1,8 @@
 package br.com.eduardofettermann.exercicios.service;
 
 import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service.Exercicio01Aula06;
+import br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio02aula06.service.Exercicio02Aula06;
 import br.com.eduardofettermann.exercicios.solucoes.lista1.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista2.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio01lista3.Exercicio01Lista3;
@@ -51,15 +53,17 @@ public class Menu {
     Exercicio exercicio04Lista5 = new Exercicio04Lista5();
     Exercicio exercicio05Lista5 = new Exercicio05Lista5();
     Exercicio exercicio06Lista5 = new Exercicio06Lista5();
+    Exercicio s1a6 = new Exercicio01Aula06();
+    Exercicio s2a6 = new Exercicio02Aula06();
 
 
     public void exibeMenuInicial() {
         try {
             System.out.println("""
                     Você quer ver a solução de qual lista?
-                    1 - Lista 1         2 - Lista 2
-                    3 - Lista 3         4 - Lista 4
-                    5 - Lista 5
+                    1 - Aula 01         2 - Aula 02
+                    3 - Aula 03         4 - Aula 04
+                    5 - Aula 05         6 - Aula 06
                     
                     0 - Encerrar
                     """);
@@ -71,6 +75,7 @@ public class Menu {
                 case (3) -> exibeMenuLista3();
                 case (4) -> exibeMenuLista4();
                 case (5) -> exibeMenuLista5();
+                case (6) -> exibeMenuLista6();
                 case (0) -> System.out.println("Encerrando...");
             }
         } catch (Exception e) {
@@ -81,6 +86,8 @@ public class Menu {
             scanner.close();
         }
     }
+
+
 
     public void exibeMenuFinal() {
         try {
@@ -234,6 +241,30 @@ public class Menu {
                 case (4) -> exercicio04Lista5.resolve();
                 case (5) -> exercicio05Lista5.resolve();
                 case (6) -> exercicio06Lista5.resolve();
+            }
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro: " + e + "\n" +
+                    "Se o problema persistir tente novamente mais tarde!");
+        }
+    }
+
+    private void exibeMenuLista6() {
+        try {
+            System.out.println("""
+                    Você quer ver a solução de qual exercício?
+                    1 - Exercicio 1 - Stack com livros
+                    2 - Exercicio 2 - HashMap com pessoas
+                    3 - Exercicio 3 - TreeMap com agenda (Não Solucionado)
+                    4 - Exercicio 4 - LinkedHashMap (Não Solucionado)
+                          
+                    0 - Voltar
+                    """);
+            int resposta = scanner.nextInt();
+
+            switch (resposta) {
+                case (0) -> exibeMenuInicial();
+                case (1) -> s1a6.resolve();
+                case (2) -> s2a6.resolve();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" +
