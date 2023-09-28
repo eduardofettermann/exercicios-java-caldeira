@@ -1,11 +1,10 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista5;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Exercicio01Lista5 implements Exercicio {
+public class Exercicio01Lista5 implements Solucao {
     int[] numeros;
     int soma = 0;
     double media = 0;
@@ -64,6 +63,6 @@ public class Exercicio01Lista5 implements Exercicio {
 
     @Override
     public void resolveNovamente() {
-        Exercicio.super.resolveNovamente();
+        Solucao.super.resolveNovamente();
     }
 }

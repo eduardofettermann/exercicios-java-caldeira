@@ -1,11 +1,11 @@
-package br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio02aula06.service;
+package br.com.eduardofettermann.exercicios.solucoes.aula06;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Exercicio02Aula06 implements Exercicio {
+public class Exercicio02Aula06 implements Solucao {
     Map<String, Integer> pessoas = new HashMap<>();
 
     @Override
@@ -99,6 +99,6 @@ public class Exercicio02Aula06 implements Exercicio {
 
     @Override
     public void resolveNovamente() {
-        Exercicio.super.resolveNovamente();
+        Solucao.super.resolveNovamente();
     }
 }

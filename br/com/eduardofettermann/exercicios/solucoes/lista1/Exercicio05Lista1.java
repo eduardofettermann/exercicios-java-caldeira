@@ -1,13 +1,13 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista1;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 //Exercicio 05
 //        Crie um programa que armazene um horário (hora, minuto e segundo) em variáveis,
 //        depois, determine e exiba a quantidade de segundos que se passaram desde as 0h00min0s
 //        e a quantidade de segundos que faltam para a meia-noite.
 
-public class Exercicio05Lista1 implements Exercicio {
+public class Exercicio05Lista1 implements Solucao {
     private final int MEIA_NOITE_EM_SEGUNDOS = 86400;
 
     @Override

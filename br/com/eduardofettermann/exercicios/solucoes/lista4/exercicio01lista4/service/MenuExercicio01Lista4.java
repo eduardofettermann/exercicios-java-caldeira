@@ -4,8 +4,8 @@ import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio01lista4.mod
 import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio01lista4.model.Moto;
 import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio01lista4.model.Veiculo;
 
-import static br.com.eduardofettermann.exercicios.model.Exercicio.menu;
-import static br.com.eduardofettermann.exercicios.model.Exercicio.scanner;
+import static br.com.eduardofettermann.exercicios.model.Solucao.menu;
+import static br.com.eduardofettermann.exercicios.model.Solucao.scanner;
 
 public class MenuExercicio01Lista4 {
     public void exibeMenuIncial() {

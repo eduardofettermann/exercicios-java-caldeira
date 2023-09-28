@@ -1,12 +1,12 @@
 package br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 import br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.model.Livro;
 
 import java.util.Comparator;
 import java.util.Stack;
 
-public class Exercicio01Aula06 implements Exercicio {
+public class Exercicio01Aula06 implements Solucao {
     Stack<Livro> livros = new Stack<Livro>();
 
     @Override
@@ -91,6 +91,6 @@ public class Exercicio01Aula06 implements Exercicio {
 
     @Override
     public void resolveNovamente() {
-        Exercicio.super.resolveNovamente();
+        Solucao.super.resolveNovamente();
     }
 }

@@ -1,12 +1,12 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista1;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 //Exercicio 09
 //        Crie um programa em Java que peça ao usuário para inserir seu ano de nascimento e,
 //        em seguida, calcule e exiba a idade.
 
-public class Exercicio09Lista1 implements Exercicio {
+public class Exercicio09Lista1 implements Solucao {
     private int anoAtual = 2023;
 
     @Override

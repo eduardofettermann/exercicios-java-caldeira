@@ -1,11 +1,11 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio06lista05.service;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio06lista05.model.Reserva;
 
 import java.util.LinkedList;
 
-public class Exercicio06Lista5 implements Exercicio {
+public class Exercicio06Lista5 implements Solucao {
     LinkedList<Reserva> reservas = new LinkedList<>();
 
     @Override
@@ -106,6 +106,6 @@ public class Exercicio06Lista5 implements Exercicio {
 
     @Override
     public void resolveNovamente() {
-        Exercicio.super.resolveNovamente();
+        Solucao.super.resolveNovamente();
     }
 }

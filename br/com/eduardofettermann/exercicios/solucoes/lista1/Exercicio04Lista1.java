@@ -1,6 +1,6 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista1;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 import java.text.DecimalFormat;
 
@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
 //        calcule a quantidade de salários mínimos que esse usuário ganha e imprima o resultado,
 //        assuma que o salário mínimo é R$1.320.
 
-public class Exercicio04Lista1 implements Exercicio {
+public class Exercicio04Lista1 implements Solucao {
     private final double SALARIO_MINIMO = 1320;
     private final DecimalFormat FORMATO_DECIMAL = new DecimalFormat("0.0");
 

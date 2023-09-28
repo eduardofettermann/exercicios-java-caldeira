@@ -1,6 +1,6 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista1;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 //    Exercicio 06
 //    Escreva um programa que leia a idade do usuário e imprima respostas diferentes dependendo do número colocado:
@@ -9,7 +9,7 @@ import br.com.eduardofettermann.exercicios.model.Exercicio;
 //    III - Se tiver mais de 65, avisar que também é facultativo o voto;
 //    IV - De 18 até 65, é obrigatório votar.
 
-public class Exercicio06Lista1 implements Exercicio {
+public class Exercicio06Lista1 implements Solucao {
 
     @Override
     public void exibeEnunciado() {

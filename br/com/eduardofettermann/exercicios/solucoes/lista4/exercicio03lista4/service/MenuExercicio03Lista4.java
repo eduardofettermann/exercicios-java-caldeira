@@ -7,7 +7,7 @@ import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio03lista4.mod
 import java.util.ArrayList;
 import java.util.List;
 
-import static br.com.eduardofettermann.exercicios.model.Exercicio.scanner;
+import static br.com.eduardofettermann.exercicios.model.Solucao.scanner;
 
 public class MenuExercicio03Lista4 {
     List<String> calculaveis = new ArrayList<String>();

@@ -1,11 +1,11 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista1;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 //         Exercicio 01
 //        Crie um programa que leia seu nome e imprima na tela.
 
-public class Exercicio01Lista1 implements Exercicio {
+public class Exercicio01Lista1 implements Solucao {
 
     @Override
     public void exibeEnunciado() {
