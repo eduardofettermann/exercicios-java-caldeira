@@ -1,4 +1,4 @@
-package br.com.eduardofettermann.exercicios.solucoes.aula06;
+package br.com.eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.service;
 
 import br.com.eduardofettermann.exercicios.model.Solucao;
 import br.com.eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.model.Product;
@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
 
 public class Solucao04A06 implements Solucao {
     int i = 0;
-    LinkedHashMap<Product, Integer> shelf = new LinkedHashMap<>();
+    LinkedHashMap<Integer, Product> shelf = new LinkedHashMap<>();
 
     @Override
     public void exibeEnunciado() {
@@ -22,22 +22,20 @@ public class Solucao04A06 implements Solucao {
 
     @Override
     public void resolve() {
-        i += 1;
-        shelf.put(new Product("Margarina", 14.20), i);
-        i += 1;
-        shelf.put(new Product("Chocolate", 1.20), i);
-        i += 1;
-        shelf.put(new Product("Leite", 0.20), i);
-        i += 1;
-        shelf.put(new Product("Iphone 18", 2000.10), i);
-        showShelfNoMenu();
-        if(isEmpty(2)){
-            System.out.println("Vazio");
-        } else{
-            System.out.println("Não vazio");
-        }
-        System.out.println(shelf.get(1)); // Trocar a ordem do linkedhashmap, para o indice ser a chave, para poder iterar melhor
+        exibeEnunciado();
+        addSomeProducts();
         showMenu();
+    }
+
+    public void addSomeProducts(){
+        i += 1;
+        shelf.put(i, new Product("Margarina", 14.20));
+        i += 1;
+        shelf.put(i, new Product("Chocolate", 1.20));
+        i += 1;
+        shelf.put(i, new Product("Leite", 0.20));
+        i += 1;
+        shelf.put(i, new Product("Iphone 18", 2000.10));
     }
 
     private void showMenu() {
@@ -46,7 +44,7 @@ public class Solucao04A06 implements Solucao {
                 Digite a ação que você deseja realizar:
                 1 - Exibir a prateleira
                 2 - Adicionar um produto à prateleira
-                3 - Remover um produtor da prateleira
+                3 - Remover um produto da prateleira
                                 
                 0 - Sair
                 """);
@@ -66,30 +64,30 @@ public class Solucao04A06 implements Solucao {
     }
 
     private void showShelfNoMenu() {
-        System.out.println("Prateleira de produtos:");
-        shelf.forEach((product, index) -> System.out.printf("\nCódigo: %d, %s)\n", index, product.toString()));
+        System.out.println("\nPrateleira de produtos:");
+        System.out.println("(Código) Nome - Preço");
+        shelf.forEach((index, product) -> System.out.printf("(%d) %s\n", index, product.toString()));
     }
 
     private void addProductToShelf() {
         scanner.nextLine();
         System.out.println("Digite o nome do produto:");
         String name = scanner.nextLine();
-        System.out.println("Digite o preço do produto: (Ex.: 10.50)");
-        Double price = scanner.nextDouble();
+        System.out.println("Digite o preço do produto: (Ex.: 10,50)");
+        double price = scanner.nextDouble();
         i += 1;
-        shelf.put(new Product(name, price), i);
+        shelf.put(i, new Product(name, price));
         showShelfWithMenu();
     }
 
     private void removeProductFromShelf() {
         scanner.nextLine();
         showShelfNoMenu();
-        System.out.println("Digite o código do produto que você deseja remover:");
+        System.out.println("\nDigite o código do produto que você deseja remover:");
         int nextInt = scanner.nextInt();
         if (!isEmpty(nextInt)) {
-            String removed = String.valueOf(shelf.get(nextInt));
-            shelf.remove(nextInt);
-            System.out.printf("\n%s removido!", removed.toString());
+            Product removed = shelf.remove(nextInt);
+            System.out.printf("\n%s removido!\n", removed);
         } else {
             System.out.printf("\nNão foi encontrado nenhum produto com o código %d!", nextInt);
         }
@@ -97,7 +95,7 @@ public class Solucao04A06 implements Solucao {
     }
 
     private boolean isEmpty(int key) {
-        return shelf.containsKey(key);
+        return !(shelf.containsKey(key));
     }
 
     @Override

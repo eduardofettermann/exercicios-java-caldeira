@@ -1,7 +1,7 @@
 package br.com.eduardofettermann.exercicios.service;
 
 import br.com.eduardofettermann.exercicios.model.Solucao;
-import br.com.eduardofettermann.exercicios.solucoes.aula06.Solucao04A06;
+import br.com.eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.service.Solucao04A06;
 import br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service.Exercicio01Aula06;
 import br.com.eduardofettermann.exercicios.solucoes.aula06.Exercicio02Aula06;
 import br.com.eduardofettermann.exercicios.solucoes.lista1.*;
@@ -257,7 +257,7 @@ public class Menu {
                     1 - Exercicio 1 - Stack com livros
                     2 - Exercicio 2 - HashMap com pessoas
                     3 - Exercicio 3 - TreeMap com agenda (Não Solucionado)
-                    4 - Exercicio 4 - LinkedHashMap (Não Solucionado)
+                    4 - Exercicio 4 - LinkedHashMap
                           
                     0 - Voltar
                     """);
