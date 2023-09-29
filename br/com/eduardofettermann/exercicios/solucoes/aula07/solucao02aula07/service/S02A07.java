@@ -3,7 +3,7 @@ package br.com.eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.serv
 import br.com.eduardofettermann.exercicios.model.Solucao;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.model.DayOfWeek;
 
-public class S02A06 implements Solucao {
+public class S02A07 implements Solucao {
     DayOfWeek dayOfWeek;
 
     @Override
