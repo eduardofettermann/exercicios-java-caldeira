@@ -3,6 +3,7 @@ package br.com.eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.serv
 import br.com.eduardofettermann.exercicios.model.Solucao;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.model.DayOfWeek;
 
+
 public class S02A07 implements Solucao {
     DayOfWeek dayOfWeek;
 
@@ -21,7 +22,6 @@ public class S02A07 implements Solucao {
     public void resolve() {
         exibeEnunciado();
         showMenu();
-        resolveNovamente();
     }
 
     private void showMenu() {
@@ -39,32 +39,31 @@ public class S02A07 implements Solucao {
             case (0) -> menu.exibeMenuFinal();
             default -> showMenu();
         }
-
     }
 
     private void showMenuDayOfWeek() {
-        String value = askDayOfWeek();
-        returnDayOfWeek(DayOfWeek.valueOf(value.toUpperCase()));
-        showMenu();
+        String day = askDayOfWeek();
+        returnDayOfWeek(DayOfWeek.valueOf(day.toUpperCase()));
+        resolveNovamente();
     }
 
     private String askDayOfWeek() {
         scanner.nextLine();
-        System.out.println("Digite o dia da semana sem feira(Ex.: Quinta):" );
+        System.out.println("Digite o dia da semana sem feira(Ex.: Quinta):");
         return scanner.nextLine();
     }
 
     public void returnDayOfWeek(DayOfWeek dayOfWeek) {
         switch (dayOfWeek) {
-            case SEGUNDA -> System.out.println("O dia da semana é segunda-feira!" );
-            case TERÇA -> System.out.println("O dia da semana é terça-feira!" );
-            case QUARTA -> System.out.println("O dia da semana é quarta-feira!" );
-            case QUINTA -> System.out.println("O dia da semana é quinta-feira!" );
-            case SEXTA -> System.out.println("O dia da semana é sexta-feira!" );
-            case SABADO -> System.out.println("O dia da semana é sábado!" );
-            case DOMINGO -> System.out.println("O dia da semana é domingo!" );
+            case SEGUNDA -> System.out.println("O dia da semana é segunda-feira!");
+            case TERÇA -> System.out.println("O dia da semana é terça-feira!");
+            case QUARTA -> System.out.println("O dia da semana é quarta-feira!");
+            case QUINTA -> System.out.println("O dia da semana é quinta-feira!");
+            case SEXTA -> System.out.println("O dia da semana é sexta-feira!");
+            case SABADO -> System.out.println("O dia da semana é sábado!");
+            case DOMINGO -> System.out.println("O dia da semana é domingo!");
             default -> {
-                System.out.println("Certifique-se de digitar o dia sem '-feira'" );
+                System.out.println("Certifique-se de digitar o dia sem '-feira'");
                 showMenuDayOfWeek();
             }
         }

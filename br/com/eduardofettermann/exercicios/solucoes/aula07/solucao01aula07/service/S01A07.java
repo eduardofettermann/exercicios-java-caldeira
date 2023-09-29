@@ -5,7 +5,7 @@ import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.model
 
 
 
-public class Solucao01A07 implements Solucao {
+public class S01A07 implements Solucao {
     Drawable circle = new Circle();
     Drawable square = new Square();
     @Override
