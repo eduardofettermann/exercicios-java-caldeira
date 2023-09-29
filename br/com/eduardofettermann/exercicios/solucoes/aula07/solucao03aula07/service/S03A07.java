@@ -50,7 +50,7 @@ public class S03A07 implements Solucao {
             System.out.println("Digite outro número inteiro");
             int secondInteger = scanner.nextInt();
             System.out.printf("\nOs números digitados foram %d e %d\n", firstInteger, secondInteger);
-            showMenu();
+            resolveNovamente();
         } catch (InputMismatchException e) {
             System.out.println("Ocorreu um erro! Apenas números inteiros são permitidos!");
             askIntegers();
