@@ -5,7 +5,8 @@ import br.com.eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.servi
 import br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service.Exercicio01Aula06;
 import br.com.eduardofettermann.exercicios.solucoes.aula06.Exercicio02Aula06;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.service.Solucao01A07;
-import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.service.S02A06;
+import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.service.S02A07;
+import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao03aula07.service.S03A07;
 import br.com.eduardofettermann.exercicios.solucoes.lista1.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista2.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio01lista3.Exercicio01Lista3;
@@ -285,7 +286,7 @@ public class Menu {
                     Você quer ver a solução de qual exercício?
                     1 - Exercicio 1 - Interface
                     2 - Exercicio 2 - Enum
-                    3 - Exercicio 3 - Tratamento de Erros (Não Solucionado)
+                    3 - Exercicio 3 - Tratamento de Erros
                     4 - Exercicio 4 - Interface, Enum e Tratamento de Erros (Não Solucionado)
                     5 - Exercicio 5 - Tratamento de Erros com Exceções Personalizadas (RuntimeException) (Não Solucionado)
                     6 - Exercicio 6 - Tratamento de Erros com Exceções Personalizadas (Exception) (Não Solucionado)
@@ -297,7 +298,8 @@ public class Menu {
             switch (resposta) {
                 case (0) -> exibeMenuInicial();
                 case (1) -> new Solucao01A07().resolve();
-                case (2) -> new S02A06().resolve();
+                case (2) -> new S02A07().resolve();
+                case (3) -> new S03A07().resolve();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" +
