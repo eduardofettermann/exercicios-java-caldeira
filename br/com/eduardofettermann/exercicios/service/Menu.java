@@ -4,6 +4,8 @@ import br.com.eduardofettermann.exercicios.model.Solucao;
 import br.com.eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.service.Solucao04A06;
 import br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service.Exercicio01Aula06;
 import br.com.eduardofettermann.exercicios.solucoes.aula06.Exercicio02Aula06;
+import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.service.Solucao01A07;
+import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.service.S02A06;
 import br.com.eduardofettermann.exercicios.solucoes.lista1.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista2.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio01lista3.Exercicio01Lista3;
@@ -66,6 +68,7 @@ public class Menu {
                     1 - Aula 01         2 - Aula 02
                     3 - Aula 03         4 - Aula 04
                     5 - Aula 05         6 - Aula 06
+                    7 - Aula 07
                     
                     0 - Encerrar
                     """);
@@ -78,6 +81,7 @@ public class Menu {
                 case (4) -> exibeMenuLista4();
                 case (5) -> exibeMenuLista5();
                 case (6) -> exibeMenuLista6();
+                case (7) -> showMenuLesson07();
                 case (0) -> System.out.println("Encerrando...");
             }
         } catch (Exception e) {
@@ -268,6 +272,32 @@ public class Menu {
                 case (1) -> s1a6.resolve();
                 case (2) -> s2a6.resolve();
                 case (4) -> s04A06.resolve();
+            }
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro: " + e + "\n" +
+                    "Se o problema persistir tente novamente mais tarde!");
+        }
+    }
+
+    private void showMenuLesson07() {
+        try {
+            System.out.println("""
+                    Você quer ver a solução de qual exercício?
+                    1 - Exercicio 1 - Interface
+                    2 - Exercicio 2 - Enum
+                    3 - Exercicio 3 - Tratamento de Erros (Não Solucionado)
+                    4 - Exercicio 4 - Interface, Enum e Tratamento de Erros (Não Solucionado)
+                    5 - Exercicio 5 - Tratamento de Erros com Exceções Personalizadas (RuntimeException) (Não Solucionado)
+                    6 - Exercicio 6 - Tratamento de Erros com Exceções Personalizadas (Exception) (Não Solucionado)
+                          
+                    0 - Voltar
+                    """);
+            int resposta = scanner.nextInt();
+
+            switch (resposta) {
+                case (0) -> exibeMenuInicial();
+                case (1) -> new Solucao01A07().resolve();
+                case (2) -> new S02A06().resolve();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" +
