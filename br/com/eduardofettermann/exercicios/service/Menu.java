@@ -1,6 +1,15 @@
 package br.com.eduardofettermann.exercicios.service;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
+import br.com.eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.service.Solucao04A06;
+import br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service.Exercicio01Aula06;
+import br.com.eduardofettermann.exercicios.solucoes.aula06.Exercicio02Aula06;
+import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.service.S01A07;
+import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.service.S02A07;
+import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao03aula07.service.S03A07;
+import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao04aula07.service.S04A07;
+import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao05aula07.service.S05A07;
+import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao06aula07.service.S06A07;
 import br.com.eduardofettermann.exercicios.solucoes.lista1.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista2.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio01lista3.Exercicio01Lista3;
@@ -18,48 +27,53 @@ import java.util.Scanner;
 
 public class Menu {
     Scanner scanner = new Scanner(System.in);
-    Exercicio exercicio01Lista1 = new Exercicio01Lista1();
-    Exercicio exercicio02Lista1 = new Exercicio02Lista1();
-    Exercicio exercicio03Lista1 = new Exercicio03Lista1();
-    Exercicio exercicio04Lista1 = new Exercicio04Lista1();
-    Exercicio exercicio05Lista1 = new Exercicio05Lista1();
-    Exercicio exercicio06Lista1 = new Exercicio06Lista1();
-    Exercicio exercicio07Lista1 = new Exercicio07Lista1();
-    Exercicio exercicio08Lista1 = new Exercicio08Lista1();
-    Exercicio exercicio09Lista1 = new Exercicio09Lista1();
-    Exercicio exercicio10Lista1 = new Exercicio10Lista1();
-    Exercicio exercicio11Lista1 = new Exercicio11Lista1();
-    Exercicio exercicio12Lista1 = new Exercicio12Lista1();
-    Exercicio exercicio13Lista1 = new Exercicio13Lista1();
+    Solucao exercicio01Lista1 = new Exercicio01Lista1();
+    Solucao exercicio02Lista1 = new Exercicio02Lista1();
+    Solucao exercicio03Lista1 = new Exercicio03Lista1();
+    Solucao exercicio04Lista1 = new Exercicio04Lista1();
+    Solucao exercicio05Lista1 = new Exercicio05Lista1();
+    Solucao exercicio06Lista1 = new Exercicio06Lista1();
+    Solucao exercicio07Lista1 = new Exercicio07Lista1();
+    Solucao exercicio08Lista1 = new Exercicio08Lista1();
+    Solucao exercicio09Lista1 = new Exercicio09Lista1();
+    Solucao exercicio10Lista1 = new Exercicio10Lista1();
+    Solucao exercicio11Lista1 = new Exercicio11Lista1();
+    Solucao exercicio12Lista1 = new Exercicio12Lista1();
+    Solucao exercicio13Lista1 = new Exercicio13Lista1();
 
-    Exercicio exercicio01Lista2 = new Exercicio01Lista2();
-    Exercicio exercicio04Lista2 = new Exercicio04Lista2();
-    Exercicio exercicio05Lista2 = new Exercicio05Lista2();
-    Exercicio exercicio06Lista2 = new Exercicio06Lista2();
-    Exercicio exercicio07Lista2 = new Exercicio07Lista2();
+    Solucao exercicio01Lista2 = new Exercicio01Lista2();
+    Solucao exercicio04Lista2 = new Exercicio04Lista2();
+    Solucao exercicio05Lista2 = new Exercicio05Lista2();
+    Solucao exercicio06Lista2 = new Exercicio06Lista2();
+    Solucao exercicio07Lista2 = new Exercicio07Lista2();
 
 
-    Exercicio exercicio01Lista3 = new Exercicio01Lista3();
-    Exercicio exercicio02Lista3 = new Exercicio02Lista3();
+    Solucao exercicio01Lista3 = new Exercicio01Lista3();
+    Solucao exercicio02Lista3 = new Exercicio02Lista3();
 
-    Exercicio exercicio01Lista4 = new Exercicio01Lista4();
-    Exercicio exercicio02Lista4 = new Exercicio02Lista4();
-    Exercicio exercicio03Lista4 = new Exercicio03Lista4();
-    Exercicio exercicio01Lista5 = new Exercicio01Lista5();
-    Exercicio exercicio02Lista5 = new Exercicio02Lista5();
-    Exercicio exercicio03Lista5 = new Exercicio03Lista5();
-    Exercicio exercicio04Lista5 = new Exercicio04Lista5();
-    Exercicio exercicio05Lista5 = new Exercicio05Lista5();
-    Exercicio exercicio06Lista5 = new Exercicio06Lista5();
+    Solucao exercicio01Lista4 = new Exercicio01Lista4();
+    Solucao exercicio02Lista4 = new Exercicio02Lista4();
+    Solucao exercicio03Lista4 = new Exercicio03Lista4();
+    Solucao exercicio01Lista5 = new Exercicio01Lista5();
+    Solucao exercicio02Lista5 = new Exercicio02Lista5();
+    Solucao exercicio03Lista5 = new Exercicio03Lista5();
+    Solucao exercicio04Lista5 = new Exercicio04Lista5();
+    Solucao exercicio05Lista5 = new Exercicio05Lista5();
+    Solucao exercicio06Lista5 = new Exercicio06Lista5();
+    Solucao s1a6 = new Exercicio01Aula06();
+    Solucao s2a6 = new Exercicio02Aula06();
+    Solucao s04A06 = new Solucao04A06();
+
 
 
     public void exibeMenuInicial() {
         try {
             System.out.println("""
                     Você quer ver a solução de qual lista?
-                    1 - Lista 1         2 - Lista 2
-                    3 - Lista 3         4 - Lista 4
-                    5 - Lista 5
+                    1 - Aula 01         2 - Aula 02
+                    3 - Aula 03         4 - Aula 04
+                    5 - Aula 05         6 - Aula 06
+                    7 - Aula 07
                     
                     0 - Encerrar
                     """);
@@ -71,6 +85,8 @@ public class Menu {
                 case (3) -> exibeMenuLista3();
                 case (4) -> exibeMenuLista4();
                 case (5) -> exibeMenuLista5();
+                case (6) -> exibeMenuLista6();
+                case (7) -> showMenuLesson07();
                 case (0) -> System.out.println("Encerrando...");
             }
         } catch (Exception e) {
@@ -81,6 +97,8 @@ public class Menu {
             scanner.close();
         }
     }
+
+
 
     public void exibeMenuFinal() {
         try {
@@ -148,7 +166,7 @@ public class Menu {
                     Você quer ver a solução de qual exercício?
                     1 - Exercicio 1         6 - Exercicio 6
                     4 - Exercicio 4         7 - Exercicio 7
-                    5 - Exercicio 5         
+                    5 - Exercicio 5
                           
                     0 - Voltar
                     """);
@@ -234,6 +252,61 @@ public class Menu {
                 case (4) -> exercicio04Lista5.resolve();
                 case (5) -> exercicio05Lista5.resolve();
                 case (6) -> exercicio06Lista5.resolve();
+            }
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro: " + e + "\n" +
+                    "Se o problema persistir tente novamente mais tarde!");
+        }
+    }
+
+    private void exibeMenuLista6() {
+        try {
+            System.out.println("""
+                    Você quer ver a solução de qual exercício?
+                    1 - Exercicio 1 - Stack com livros
+                    2 - Exercicio 2 - HashMap com pessoas
+                    3 - Exercicio 3 - TreeMap com agenda (Não Solucionado)
+                    4 - Exercicio 4 - LinkedHashMap
+                          
+                    0 - Voltar
+                    """);
+            int resposta = scanner.nextInt();
+
+            switch (resposta) {
+                case (0) -> exibeMenuInicial();
+                case (1) -> s1a6.resolve();
+                case (2) -> s2a6.resolve();
+                case (4) -> s04A06.resolve();
+            }
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro: " + e + "\n" +
+                    "Se o problema persistir tente novamente mais tarde!");
+        }
+    }
+
+    private void showMenuLesson07() {
+        try {
+            System.out.println("""
+                    Você quer ver a solução de qual exercício?
+                    1 - Exercicio 1 - Interface
+                    2 - Exercicio 2 - Enum
+                    3 - Exercicio 3 - Tratamento de Erros
+                    4 - Exercicio 4 - Interface, Enum e Tratamento de Erros
+                    5 - Exercicio 5 - Tratamento de Erros com Exceções Personalizadas (RuntimeException)
+                    6 - Exercicio 6 - Tratamento de Erros com Exceções Personalizadas (Exception)
+                          
+                    0 - Voltar
+                    """);
+            int resposta = scanner.nextInt();
+
+            switch (resposta) {
+                case (0) -> exibeMenuInicial();
+                case (1) -> new S01A07().resolve();
+                case (2) -> new S02A07().resolve();
+                case (3) -> new S03A07().resolve();
+                case (4) -> new S04A07().resolve();
+                case (5) -> new S05A07().resolve();
+                case (6) -> new S06A07().resolve();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" +

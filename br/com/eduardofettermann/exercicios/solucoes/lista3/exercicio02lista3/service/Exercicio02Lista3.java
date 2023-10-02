@@ -1,9 +1,9 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio02lista3.service;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio02lista3.menu.MenuCirculo;
 
-public class Exercicio02Lista3 implements Exercicio {
+public class Exercicio02Lista3 implements Solucao {
 
     @Override
     public void exibeEnunciado() {
@@ -50,6 +50,6 @@ public class Exercicio02Lista3 implements Exercicio {
 
     @Override
     public void resolveNovamente() {
-        Exercicio.super.resolveNovamente();
+        Solucao.super.resolveNovamente();
     }
 }

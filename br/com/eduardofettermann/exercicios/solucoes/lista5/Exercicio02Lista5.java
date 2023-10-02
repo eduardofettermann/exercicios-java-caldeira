@@ -1,11 +1,11 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista5;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 import java.util.Arrays;
 import java.util.Random;
 
-public class Exercicio02Lista5 implements Exercicio {
+public class Exercicio02Lista5 implements Solucao {
     private int[] inteiros;
     private int ultimoNumero = 100;
     private Random random = new Random();
@@ -71,6 +71,6 @@ public class Exercicio02Lista5 implements Exercicio {
 
     @Override
     public void resolveNovamente() {
-        Exercicio.super.resolveNovamente();
+        Solucao.super.resolveNovamente();
     }
 }

@@ -1,8 +1,8 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista2;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
-public class Exercicio05Lista2 implements Exercicio {
+public class Exercicio05Lista2 implements Solucao {
     @Override
     public void exibeEnunciado() {
         System.out.println("""

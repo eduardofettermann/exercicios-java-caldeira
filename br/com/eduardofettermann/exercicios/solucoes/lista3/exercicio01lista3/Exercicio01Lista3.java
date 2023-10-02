@@ -1,8 +1,8 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio01lista3;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
-public class Exercicio01Lista3 implements Exercicio {
+public class Exercicio01Lista3 implements Solucao {
     @Override
     public void exibeEnunciado() {
         System.out.println("""
@@ -67,6 +67,6 @@ public class Exercicio01Lista3 implements Exercicio {
 
     @Override
     public void resolveNovamente() {
-        Exercicio.super.resolveNovamente();
+        Solucao.super.resolveNovamente();
     }
 }

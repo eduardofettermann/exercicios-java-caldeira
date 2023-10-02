@@ -5,8 +5,8 @@ import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio02lista4.mod
 import java.util.ArrayList;
 import java.util.List;
 
-import static br.com.eduardofettermann.exercicios.model.Exercicio.menu;
-import static br.com.eduardofettermann.exercicios.model.Exercicio.scanner;
+import static br.com.eduardofettermann.exercicios.model.Solucao.menu;
+import static br.com.eduardofettermann.exercicios.model.Solucao.scanner;
 
 public class MenuExercicio02Lista4 {
     private List<FormaGeometrica> formasGeometricas = new ArrayList<FormaGeometrica>();

@@ -1,13 +1,13 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista1;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 //Exercicio 13
 //        Escreva um programa que calcule o fatorial de um número inteiro não negativo
 //        fornecido pelo usuário. O fatorial de um número N é o produto de todos os inteiros
 //        de 1 até N.
 
-public class Exercicio13Lista1 implements Exercicio {
+public class Exercicio13Lista1 implements Solucao {
 
     @Override
     public void exibeEnunciado() {

@@ -1,6 +1,6 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio02lista4.model;
 
-import static br.com.eduardofettermann.exercicios.model.Exercicio.scanner;
+import static br.com.eduardofettermann.exercicios.model.Solucao.scanner;
 
 public class Quadrado extends FormaGeometrica {
     private double base;

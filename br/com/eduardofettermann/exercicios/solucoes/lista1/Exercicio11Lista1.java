@@ -1,12 +1,12 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista1;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 //Exercicio 11
 //        Peça ao usuário que digite uma palavra ou frase e conte quantas vogais (a, e, i, o, u)
 //        estão presentes. Exiba o número de vogais na tela.
 
-public class Exercicio11Lista1 implements Exercicio {
+public class Exercicio11Lista1 implements Solucao {
     private int contadorDeVogais = 0;
 
     @Override

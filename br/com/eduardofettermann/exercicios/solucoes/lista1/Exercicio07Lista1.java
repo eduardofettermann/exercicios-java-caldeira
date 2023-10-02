@@ -1,12 +1,12 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista1;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 //Exercicio 07
 //        Criar para uma empresa de consórcio. No teste inicial, você deve perguntar para o usuário a idade dele
 //        e o seu salário. A pessoa só pode comprar um automóvel se for de maior e ganhar mais de R$ 2.000,00.
 
-public class Exercicio07Lista1 implements Exercicio {
+public class Exercicio07Lista1 implements Solucao {
 
     @Override
     public void exibeEnunciado() {

@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+out/
+bin/
+target/
+*.class
+*.log
+.idea/

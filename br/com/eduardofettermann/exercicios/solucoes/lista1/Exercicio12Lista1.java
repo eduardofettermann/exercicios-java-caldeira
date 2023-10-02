@@ -1,6 +1,6 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista1;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 import java.text.DecimalFormat;
 
@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
 //        como euros ou reais. Peça ao usuário para inserir a quantia em dólares e a taxa
 //        de câmbio atual. Em seguida, calcule e exiba o valor convertido.
 
-public class Exercicio12Lista1 implements Exercicio {
+public class Exercicio12Lista1 implements Solucao {
     private final DecimalFormat FORMATO_DECIMAL = new DecimalFormat("0.00");
 
     @Override

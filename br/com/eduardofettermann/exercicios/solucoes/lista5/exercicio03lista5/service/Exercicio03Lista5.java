@@ -1,12 +1,12 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio03lista5.service;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio03lista5.model.Tarefa;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Exercicio03Lista5 implements Exercicio {
+public class Exercicio03Lista5 implements Solucao {
     private List<Tarefa> tarefasList = new ArrayList<>();
 
     @Override
@@ -123,6 +123,6 @@ public class Exercicio03Lista5 implements Exercicio {
 
     @Override
     public void resolveNovamente() {
-        Exercicio.super.resolveNovamente();
+        Solucao.super.resolveNovamente();
     }
 }

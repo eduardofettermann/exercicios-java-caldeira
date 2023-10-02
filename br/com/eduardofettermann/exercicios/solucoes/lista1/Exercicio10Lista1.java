@@ -1,13 +1,13 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista1;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 //Exercicio 10
 //        Crie um programa em Java que peça ao usuário para inserir uma temperatura em graus
 //        Celsius e, em seguida, converta essa temperatura em graus Fahrenheit usando a fórmula:
 //        Fahrenheit = (Celsius * 9/5) + 32. Exiba o resultado na tela.
 
-public class Exercicio10Lista1 implements Exercicio {
+public class Exercicio10Lista1 implements Solucao {
 
     @Override
     public void exibeEnunciado() {

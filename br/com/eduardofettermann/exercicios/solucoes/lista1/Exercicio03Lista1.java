@@ -1,13 +1,13 @@
 package br.com.eduardofettermann.exercicios.solucoes.lista1;
 
-import br.com.eduardofettermann.exercicios.model.Exercicio;
+import br.com.eduardofettermann.exercicios.model.Solucao;
 
 import java.text.DecimalFormat;
 
 //Exercicio 03
 //        Crie um programa que leia 3 números, imprima o maior, o menor e a média aritmética.
 
-public class Exercicio03Lista1 implements Exercicio {
+public class Exercicio03Lista1 implements Solucao {
     private final DecimalFormat FORMATO_DECIMAL = new DecimalFormat("0.00");
 
     @Override
