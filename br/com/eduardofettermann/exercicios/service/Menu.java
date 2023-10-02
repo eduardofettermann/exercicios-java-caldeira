@@ -1,70 +1,32 @@
 package br.com.eduardofettermann.exercicios.service;
 
-import br.com.eduardofettermann.exercicios.model.Solucao;
-import br.com.eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.service.S04A06;
-import br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service.S01A06;
+import br.com.eduardofettermann.exercicios.solucoes.aula01.*;
+import br.com.eduardofettermann.exercicios.solucoes.aula02.*;
+import br.com.eduardofettermann.exercicios.solucoes.aula03.exercicio01lista3.S01A03;
+import br.com.eduardofettermann.exercicios.solucoes.aula03.exercicio02lista3.service.S02A03;
+import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio01lista4.service.S01A04;
+import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio02lista4.service.S02A04;
+import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio03lista4.service.S03A04;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.S01A05;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.S02A05;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio03lista5.service.S03A05;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio04lista5.service.S04A05;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio05lista5.service.S05A05;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio06lista05.service.S06A05;
 import br.com.eduardofettermann.exercicios.solucoes.aula06.S02A06;
+import br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service.S01A06;
+import br.com.eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.service.S04A06;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.service.S01A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.service.S02A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao03aula07.service.S03A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao04aula07.service.S04A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao05aula07.service.S05A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao06aula07.service.S06A07;
-import br.com.eduardofettermann.exercicios.solucoes.aula01.*;
-import br.com.eduardofettermann.exercicios.solucoes.aula02.*;
-import br.com.eduardofettermann.exercicios.solucoes.aula03.exercicio01lista3.S01A03;
-import br.com.eduardofettermann.exercicios.solucoes.aula03.exercicio02lista3.service.S02A03;
-import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio03lista4.service.S03A04;
-import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio01lista4.service.S01A04;
-import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio02lista4.service.S02A04;
-import br.com.eduardofettermann.exercicios.solucoes.aula05.*;
-import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio03lista5.service.S03A05;
-import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio04lista5.service.S04A05;
-import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio05lista5.service.S05A05;
-import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio06lista05.service.S06A05;
 
 import java.util.Scanner;
 
 public class Menu {
     Scanner scanner = new Scanner(System.in);
-    Solucao exercicio01Lista1 = new S01A01();
-    Solucao exercicio02Lista1 = new S02A01();
-    Solucao exercicio03Lista1 = new S03A01();
-    Solucao exercicio04Lista1 = new S04A01();
-    Solucao exercicio05Lista1 = new S05A01();
-    Solucao exercicio06Lista1 = new S06A01();
-    Solucao exercicio07Lista1 = new S07A01();
-    Solucao exercicio08Lista1 = new S08A01();
-    Solucao exercicio09Lista1 = new S09A01();
-    Solucao exercicio10Lista1 = new S10A01();
-    Solucao exercicio11Lista1 = new S11A01();
-    Solucao exercicio12Lista1 = new S12A01();
-    Solucao exercicio13Lista1 = new S13A01();
-
-    Solucao exercicio01Lista2 = new S01A02();
-    Solucao exercicio04Lista2 = new S04A02();
-    Solucao exercicio05Lista2 = new S05A02();
-    Solucao exercicio06Lista2 = new S06A02();
-    Solucao exercicio07Lista2 = new S07A02();
-
-
-    Solucao exercicio01Lista3 = new S01A03();
-    Solucao exercicio02Lista3 = new S02A03();
-
-    Solucao exercicio01Lista4 = new S01A04();
-    Solucao exercicio02Lista4 = new S02A04();
-    Solucao exercicio03Lista4 = new S03A04();
-    Solucao exercicio01Lista5 = new S01A05();
-    Solucao exercicio02Lista5 = new S02A05();
-    Solucao exercicio03Lista5 = new S03A05();
-    Solucao exercicio04Lista5 = new S04A05();
-    Solucao exercicio05Lista5 = new S05A05();
-    Solucao exercicio06Lista5 = new S06A05();
-    Solucao s1a6 = new S01A06();
-    Solucao s2a6 = new S02A06();
-    Solucao s04A06 = new S04A06();
-
-
 
     public void exibeMenuInicial() {
         try {
@@ -74,7 +36,7 @@ public class Menu {
                     3 - Aula 03         4 - Aula 04
                     5 - Aula 05         6 - Aula 06
                     7 - Aula 07
-                    
+                                        
                     0 - Encerrar
                     """);
             int resposta = scanner.nextInt();
@@ -90,14 +52,11 @@ public class Menu {
                 case (0) -> System.out.println("Encerrando...");
             }
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro: " + e + "\n" +
-                    "Se o problema persistir tente novamente mais tarde!");
-        }
-        finally {
+            System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
+        } finally {
             scanner.close();
         }
     }
-
 
 
     public void exibeMenuFinal() {
@@ -106,7 +65,7 @@ public class Menu {
             System.out.println("""
                     Você quer ver outra solução ou sair?
                     1 - Ver outro exercício
-                    
+                                        
                     0 - Encerrar
                     """);
             int opcao = scanner.nextInt();
@@ -115,8 +74,7 @@ public class Menu {
                 case (0) -> System.out.println("Encerrando...");
             }
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro: " + e + "\n" + "Tente digitar apenas número inteiros de 1 a 2, " +
-                    "se o problema persistir tente novamente mais tarde!");
+            System.out.println("Ocorreu um erro: " + e + "\n" + "Tente digitar apenas número inteiros de 1 a 2, " + "se o problema persistir tente novamente mais tarde!");
         } finally {
             scanner.close();
         }
@@ -140,23 +98,22 @@ public class Menu {
 
             switch (resposta) {
                 case (0) -> exibeMenuInicial();
-                case (1) -> exercicio01Lista1.resolve();
-                case (2) -> exercicio02Lista1.resolve();
-                case (3) -> exercicio03Lista1.resolve();
-                case (4) -> exercicio04Lista1.resolve();
-                case (5) -> exercicio05Lista1.resolve();
-                case (6) -> exercicio06Lista1.resolve();
-                case (7) -> exercicio07Lista1.resolve();
-                case (8) -> exercicio08Lista1.resolve();
-                case (9) -> exercicio09Lista1.resolve();
-                case (10) -> exercicio10Lista1.resolve();
-                case (11) -> exercicio11Lista1.resolve();
-                case (12) -> exercicio12Lista1.resolve();
-                case (13) -> exercicio13Lista1.resolve();
+                case (1) -> new S01A01().resolve();
+                case (2) -> new S02A01().resolve();
+                case (3) -> new S03A01().resolve();
+                case (4) -> new S04A01().resolve();
+                case (5) -> new S05A01().resolve();
+                case (6) -> new S06A01().resolve();
+                case (7) -> new S07A01().resolve();
+                case (8) -> new S08A01().resolve();
+                case (9) -> new S09A01().resolve();
+                case (10) -> new S10A01().resolve();
+                case (11) -> new S11A01().resolve();
+                case (12) -> new S12A01().resolve();
+                case (13) -> new S13A01().resolve();
             }
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro: " + e + "\n" +
-                    "Se o problema persistir tente novamente mais tarde!");
+            System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
         }
     }
 
@@ -174,17 +131,17 @@ public class Menu {
 
             switch (resposta) {
                 case (0) -> exibeMenuInicial();
-                case (1) -> exercicio01Lista2.resolve();
-                case (4) -> exercicio04Lista2.resolve();
-                case (5) -> exercicio05Lista2.resolve();
-                case (6) -> exercicio06Lista2.resolve();
-                case (7) -> exercicio07Lista2.resolve();
+                case (1) -> new S01A02().resolve();
+                case (4) -> new S04A02().resolve();
+                case (5) -> new S05A02().resolve();
+                case (6) -> new S06A02().resolve();
+                case (7) -> new S07A02().resolve();
             }
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro: " + e + "\n" +
-                    "Se o problema persistir tente novamente mais tarde!");
+            System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
         }
     }
+
     public void exibeMenuLista3() {
         try {
             System.out.println("""
@@ -198,12 +155,11 @@ public class Menu {
 
             switch (resposta) {
                 case (0) -> exibeMenuInicial();
-                case (1) -> exercicio01Lista3.resolve();
-                case (2) -> exercicio02Lista3.resolve();
+                case (1) -> new S01A03().resolve();
+                case (2) -> new S02A03().resolve();
             }
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro: " + e + "\n" +
-                    "Se o problema persistir tente novamente mais tarde!");
+            System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
         }
     }
 
@@ -220,16 +176,16 @@ public class Menu {
             int resposta = scanner.nextInt();
             switch (resposta) {
                 case (0) -> exibeMenuInicial();
-                case (1) -> exercicio01Lista4.resolve();
-
-                case (2) -> exercicio02Lista4.resolve();
-                case (3) -> exercicio03Lista4.resolve();
+                case (1) -> new S01A04().resolve();
+                case (2) -> new S02A04().resolve();
+                case (3) -> new S03A04().resolve();
             }
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro: " + e + "\n" +
-                    "Se o problema persistir tente novamente mais tarde!");
+            System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
         }
-    }public void exibeMenuLista5() {
+    }
+
+    public void exibeMenuLista5() {
         try {
             System.out.println("""
                     Você quer ver a solução de qual exercício?
@@ -246,16 +202,15 @@ public class Menu {
 
             switch (resposta) {
                 case (0) -> exibeMenuInicial();
-                case (1) -> exercicio01Lista5.resolve();
-                case (2) -> exercicio02Lista5.resolve();
-                case (3) -> exercicio03Lista5.resolve();
-                case (4) -> exercicio04Lista5.resolve();
-                case (5) -> exercicio05Lista5.resolve();
-                case (6) -> exercicio06Lista5.resolve();
+                case (1) -> new S01A05().resolve();
+                case (2) -> new S02A05().resolve();
+                case (3) -> new S03A05().resolve();
+                case (4) -> new S04A05().resolve();
+                case (5) -> new S05A05().resolve();
+                case (6) -> new S06A05().resolve();
             }
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro: " + e + "\n" +
-                    "Se o problema persistir tente novamente mais tarde!");
+            System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
         }
     }
 
@@ -274,13 +229,12 @@ public class Menu {
 
             switch (resposta) {
                 case (0) -> exibeMenuInicial();
-                case (1) -> s1a6.resolve();
-                case (2) -> s2a6.resolve();
-                case (4) -> s04A06.resolve();
+                case (1) -> new S01A06().resolve();
+                case (2) -> new S02A06().resolve();
+                case (4) -> new S04A06().resolve();
             }
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro: " + e + "\n" +
-                    "Se o problema persistir tente novamente mais tarde!");
+            System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
         }
     }
 
@@ -309,8 +263,7 @@ public class Menu {
                 case (6) -> new S06A07().resolve();
             }
         } catch (Exception e) {
-            System.out.println("Ocorreu um erro: " + e + "\n" +
-                    "Se o problema persistir tente novamente mais tarde!");
+            System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
         }
     }
 }
