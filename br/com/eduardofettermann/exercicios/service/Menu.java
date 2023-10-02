@@ -8,6 +8,7 @@ import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.servi
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.service.S02A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao03aula07.service.S03A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao04aula07.service.S04A07;
+import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao05aula07.service.S05A07;
 import br.com.eduardofettermann.exercicios.solucoes.lista1.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista2.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio01lista3.Exercicio01Lista3;
@@ -303,6 +304,7 @@ public class Menu {
                 case (2) -> new S02A07().resolve();
                 case (3) -> new S03A07().resolve();
                 case (4) -> new S04A07().resolve();
+                case (5) -> new S05A07().resolve();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" +
