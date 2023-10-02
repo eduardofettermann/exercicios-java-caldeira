@@ -293,7 +293,7 @@ public class Menu {
                     3 - Exercicio 3 - Tratamento de Erros
                     4 - Exercicio 4 - Interface, Enum e Tratamento de Erros
                     5 - Exercicio 5 - Tratamento de Erros com Exceções Personalizadas (RuntimeException)
-                    6 - Exercicio 6 - Tratamento de Erros com Exceções Personalizadas (Exception) (Não Solucionado)
+                    6 - Exercicio 6 - Tratamento de Erros com Exceções Personalizadas (Exception)
                           
                     0 - Voltar
                     """);
