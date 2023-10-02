@@ -1,4 +1,4 @@
-# Exerccios Java Caldeira
+# Exercícios Java Caldeira
 
 Este repositório contém uma variedade de soluções de exercícios, propostos nas aulas da trilha de programação do Geração Caldeira
 
