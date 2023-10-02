@@ -1,9 +1,9 @@
 package br.com.eduardofettermann.exercicios.service;
 
 import br.com.eduardofettermann.exercicios.model.Solucao;
-import br.com.eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.service.Solucao04A06;
-import br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service.Exercicio01Aula06;
-import br.com.eduardofettermann.exercicios.solucoes.aula06.Exercicio02Aula06;
+import br.com.eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.service.S04A06;
+import br.com.eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service.S01A06;
+import br.com.eduardofettermann.exercicios.solucoes.aula06.S02A06;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.service.S01A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.service.S02A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao03aula07.service.S03A07;
@@ -12,57 +12,57 @@ import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao05aula07.servi
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao06aula07.service.S06A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula01.*;
 import br.com.eduardofettermann.exercicios.solucoes.aula02.*;
-import br.com.eduardofettermann.exercicios.solucoes.aula03.exercicio01lista3.Exercicio01Lista3;
-import br.com.eduardofettermann.exercicios.solucoes.aula03.exercicio02lista3.service.Exercicio02Lista3;
-import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio03lista4.service.Exercicio03Lista4;
-import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio01lista4.service.Exercicio01Lista4;
-import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio02lista4.service.Exercicio02Lista4;
+import br.com.eduardofettermann.exercicios.solucoes.aula03.exercicio01lista3.S01A03;
+import br.com.eduardofettermann.exercicios.solucoes.aula03.exercicio02lista3.service.S02A03;
+import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio03lista4.service.S03A04;
+import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio01lista4.service.S01A04;
+import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio02lista4.service.S02A04;
 import br.com.eduardofettermann.exercicios.solucoes.aula05.*;
-import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio03lista5.service.Exercicio03Lista5;
-import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio04lista5.service.Exercicio04Lista5;
-import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio05lista5.service.Exercicio05Lista5;
-import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio06lista05.service.Exercicio06Lista5;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio03lista5.service.S03A05;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio04lista5.service.S04A05;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio05lista5.service.S05A05;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio06lista05.service.S06A05;
 
 import java.util.Scanner;
 
 public class Menu {
     Scanner scanner = new Scanner(System.in);
-    Solucao exercicio01Lista1 = new Exercicio01Lista1();
-    Solucao exercicio02Lista1 = new Exercicio02Lista1();
-    Solucao exercicio03Lista1 = new Exercicio03Lista1();
-    Solucao exercicio04Lista1 = new Exercicio04Lista1();
-    Solucao exercicio05Lista1 = new Exercicio05Lista1();
-    Solucao exercicio06Lista1 = new Exercicio06Lista1();
-    Solucao exercicio07Lista1 = new Exercicio07Lista1();
-    Solucao exercicio08Lista1 = new Exercicio08Lista1();
-    Solucao exercicio09Lista1 = new Exercicio09Lista1();
-    Solucao exercicio10Lista1 = new Exercicio10Lista1();
-    Solucao exercicio11Lista1 = new Exercicio11Lista1();
-    Solucao exercicio12Lista1 = new Exercicio12Lista1();
-    Solucao exercicio13Lista1 = new Exercicio13Lista1();
+    Solucao exercicio01Lista1 = new S01A01();
+    Solucao exercicio02Lista1 = new S02A01();
+    Solucao exercicio03Lista1 = new S03A01();
+    Solucao exercicio04Lista1 = new S04A01();
+    Solucao exercicio05Lista1 = new S05A01();
+    Solucao exercicio06Lista1 = new S06A01();
+    Solucao exercicio07Lista1 = new S07A01();
+    Solucao exercicio08Lista1 = new S08A01();
+    Solucao exercicio09Lista1 = new S09A01();
+    Solucao exercicio10Lista1 = new S10A01();
+    Solucao exercicio11Lista1 = new S11A01();
+    Solucao exercicio12Lista1 = new S12A01();
+    Solucao exercicio13Lista1 = new S13A01();
 
-    Solucao exercicio01Lista2 = new Exercicio01Lista2();
-    Solucao exercicio04Lista2 = new Exercicio04Lista2();
-    Solucao exercicio05Lista2 = new Exercicio05Lista2();
-    Solucao exercicio06Lista2 = new Exercicio06Lista2();
-    Solucao exercicio07Lista2 = new Exercicio07Lista2();
+    Solucao exercicio01Lista2 = new S01A02();
+    Solucao exercicio04Lista2 = new S04A02();
+    Solucao exercicio05Lista2 = new S05A02();
+    Solucao exercicio06Lista2 = new S06A02();
+    Solucao exercicio07Lista2 = new S07A02();
 
 
-    Solucao exercicio01Lista3 = new Exercicio01Lista3();
-    Solucao exercicio02Lista3 = new Exercicio02Lista3();
+    Solucao exercicio01Lista3 = new S01A03();
+    Solucao exercicio02Lista3 = new S02A03();
 
-    Solucao exercicio01Lista4 = new Exercicio01Lista4();
-    Solucao exercicio02Lista4 = new Exercicio02Lista4();
-    Solucao exercicio03Lista4 = new Exercicio03Lista4();
-    Solucao exercicio01Lista5 = new Exercicio01Lista5();
-    Solucao exercicio02Lista5 = new Exercicio02Lista5();
-    Solucao exercicio03Lista5 = new Exercicio03Lista5();
-    Solucao exercicio04Lista5 = new Exercicio04Lista5();
-    Solucao exercicio05Lista5 = new Exercicio05Lista5();
-    Solucao exercicio06Lista5 = new Exercicio06Lista5();
-    Solucao s1a6 = new Exercicio01Aula06();
-    Solucao s2a6 = new Exercicio02Aula06();
-    Solucao s04A06 = new Solucao04A06();
+    Solucao exercicio01Lista4 = new S01A04();
+    Solucao exercicio02Lista4 = new S02A04();
+    Solucao exercicio03Lista4 = new S03A04();
+    Solucao exercicio01Lista5 = new S01A05();
+    Solucao exercicio02Lista5 = new S02A05();
+    Solucao exercicio03Lista5 = new S03A05();
+    Solucao exercicio04Lista5 = new S04A05();
+    Solucao exercicio05Lista5 = new S05A05();
+    Solucao exercicio06Lista5 = new S06A05();
+    Solucao s1a6 = new S01A06();
+    Solucao s2a6 = new S02A06();
+    Solucao s04A06 = new S04A06();
 
 
 
