@@ -9,6 +9,7 @@ import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.servi
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao03aula07.service.S03A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao04aula07.service.S04A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao05aula07.service.S05A07;
+import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao06aula07.service.S06A07;
 import br.com.eduardofettermann.exercicios.solucoes.lista1.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista2.*;
 import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio01lista3.Exercicio01Lista3;
@@ -62,7 +63,7 @@ public class Menu {
     Solucao s1a6 = new Exercicio01Aula06();
     Solucao s2a6 = new Exercicio02Aula06();
     Solucao s04A06 = new Solucao04A06();
-    S02A07 s02A07 = new S02A07();
+
 
 
     public void exibeMenuInicial() {
@@ -165,7 +166,7 @@ public class Menu {
                     Você quer ver a solução de qual exercício?
                     1 - Exercicio 1         6 - Exercicio 6
                     4 - Exercicio 4         7 - Exercicio 7
-                    5 - Exercicio 5  
+                    5 - Exercicio 5
                           
                     0 - Voltar
                     """);
@@ -291,7 +292,7 @@ public class Menu {
                     2 - Exercicio 2 - Enum
                     3 - Exercicio 3 - Tratamento de Erros
                     4 - Exercicio 4 - Interface, Enum e Tratamento de Erros
-                    5 - Exercicio 5 - Tratamento de Erros com Exceções Personalizadas (RuntimeException) (Não Solucionado)
+                    5 - Exercicio 5 - Tratamento de Erros com Exceções Personalizadas (RuntimeException)
                     6 - Exercicio 6 - Tratamento de Erros com Exceções Personalizadas (Exception) (Não Solucionado)
                           
                     0 - Voltar
@@ -305,6 +306,7 @@ public class Menu {
                 case (3) -> new S03A07().resolve();
                 case (4) -> new S04A07().resolve();
                 case (5) -> new S05A07().resolve();
+                case (6) -> new S06A07().resolve();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" +
