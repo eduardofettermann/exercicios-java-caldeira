@@ -10,18 +10,18 @@ import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao03aula07.servi
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao04aula07.service.S04A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao05aula07.service.S05A07;
 import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao06aula07.service.S06A07;
-import br.com.eduardofettermann.exercicios.solucoes.lista1.*;
-import br.com.eduardofettermann.exercicios.solucoes.lista2.*;
-import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio01lista3.Exercicio01Lista3;
-import br.com.eduardofettermann.exercicios.solucoes.lista3.exercicio02lista3.service.Exercicio02Lista3;
-import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio03lista4.service.Exercicio03Lista4;
-import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio01lista4.service.Exercicio01Lista4;
-import br.com.eduardofettermann.exercicios.solucoes.lista4.exercicio02lista4.service.Exercicio02Lista4;
-import br.com.eduardofettermann.exercicios.solucoes.lista5.*;
-import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio03lista5.service.Exercicio03Lista5;
-import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio04lista5.service.Exercicio04Lista5;
-import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio05lista5.service.Exercicio05Lista5;
-import br.com.eduardofettermann.exercicios.solucoes.lista5.exercicio06lista05.service.Exercicio06Lista5;
+import br.com.eduardofettermann.exercicios.solucoes.aula01.*;
+import br.com.eduardofettermann.exercicios.solucoes.aula02.*;
+import br.com.eduardofettermann.exercicios.solucoes.aula03.exercicio01lista3.Exercicio01Lista3;
+import br.com.eduardofettermann.exercicios.solucoes.aula03.exercicio02lista3.service.Exercicio02Lista3;
+import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio03lista4.service.Exercicio03Lista4;
+import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio01lista4.service.Exercicio01Lista4;
+import br.com.eduardofettermann.exercicios.solucoes.aula04.exercicio02lista4.service.Exercicio02Lista4;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.*;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio03lista5.service.Exercicio03Lista5;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio04lista5.service.Exercicio04Lista5;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio05lista5.service.Exercicio05Lista5;
+import br.com.eduardofettermann.exercicios.solucoes.aula05.exercicio06lista05.service.Exercicio06Lista5;
 
 import java.util.Scanner;
 
