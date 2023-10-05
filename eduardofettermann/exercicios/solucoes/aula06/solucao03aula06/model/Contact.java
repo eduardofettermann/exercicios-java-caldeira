@@ -39,7 +39,7 @@ public class Contact implements Comparable<Contact> {
 
     @Override
     public String toString() {
-        return String.format("%s (%s) - %s", this.getName(), this.getZone(), this.getNumber());
+        return String.format("%s(%s) - %s", this.getName(), this.getZone(), this.getNumber());
     }
 
     @Override

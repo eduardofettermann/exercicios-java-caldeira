@@ -28,38 +28,73 @@ public class S03A06 implements Solucao {
     @Override
     public void resolve() {
         exibeEnunciado();
-        addSomeContactsToContactsList();
-        showContactsList();
-        showContactsPerZone();
-
+        showMenu();
     }
 
+    private void showMenu() {
+        System.out.println("""
+                \n
+                Digite a ação que você deseja realizar
+                1 - Adicionar um contato
+                2 - Exibir a agenda de contatos
+                3 - Exibir a agenda de contatos com base na zona
+                4 - Adicionar contatos exemplos na lista
+                                
+                0 - Sair
+                """);
+        int digitado = scanner.nextInt();
+        switch (digitado) {
+            case (1) -> addContactToContactsList();
+            case (2) -> showContactsList();
+            case (3) -> showContactsPerZone();
+            case (4) -> addSomeContactsToContactsList();
+            case (0) -> menu.showEndMenu();
+            default -> showMenu();
+        }
+    }
+
+    private void addContactToContactsList() {
+        scanner.nextLine();
+        System.out.println("Digite o nome do contato:");
+        String name = scanner.nextLine();
+        System.out.println("Digite o numero do contato:");
+        String number = scanner.nextLine();
+        System.out.println("Digite o a região do contato (Sul/Norte/Centro/Leste/Oeste:");
+        String zone = scanner.nextLine();
+        contactsTreeMap.put(new Contact(name, number, zone), name);
+        showContactsList();
+    }
 
     private void addSomeContactsToContactsList() {
-        contactsTreeMap.put(new Contact("Laís", "41", "Oeste"), "Laís");
-        contactsTreeMap.put(new Contact("Eduardo", "51", "Sul"), "Eduardo");
-        contactsTreeMap.put(new Contact("Zamit", "11", "Oeste"), "Zamit");
-
+        contactsTreeMap.put(new Contact("Java", "(53) 3833-4113", "Oeste"), "Java");
+        contactsTreeMap.put(new Contact("C++", "(54) 3654-7530", "Sul"), "C++");
+        contactsTreeMap.put(new Contact("JavaScript", "(53) 2477-3568", "Oeste"), "JavaScript");
+        contactsTreeMap.put(new Contact("Spring", "(54) 2016-7069", "Centro"), "Spring");
+        contactsTreeMap.put(new Contact("Python", "(55) 2426-4555", "Leste"), "Python");
+        contactsTreeMap.put(new Contact("Kotlin", "(53) 2405-8670", "Norte"), "Kotlin");
+        showContactsList();
     }
 
     private void showContactsList() {
-        System.out.println("\nContatos por ordem alfabetica:");
-        contactsTreeMap.forEach((contact, name) -> System.out.printf("\n%s", contact));
+        System.out.println("\nContatos(ordem alfabetica):");
+
+        System.out.println("Nome(Zona) - Número");
+        contactsTreeMap.forEach((contact, name) -> System.out.printf("%s\n", contact));
+        showMenu();
     }
 
     private void showContactsPerZone() {
-        Stream<Contact> contactsPerZone = contactsTreeMap.keySet().stream().sorted((o1, o2) -> zoneCompare.compare(o1, o2));
-        System.out.println("\n\nContatos por zona:");
-        contactsPerZone.forEach((contact) -> System.out.printf("\n%s", contact));
+        Stream<Contact> contactsPerZone = contactsTreeMap.keySet().stream()
+                .sorted((contact1, contact2) -> zoneCompare.compare(contact1, contact2));
+        System.out.println("Nome(Zona) - Número");
+        System.out.println("\nContatos(ordem por zona):");
+        contactsPerZone.forEach((contact) -> System.out.printf("%s\n", contact));
+        showMenu();
     }
 
 
     @Override
     public void resolveNovamente() {
         Solucao.super.resolveNovamente();
-    }
-
-    public static void main(String[] args) {
-        new S03A06().resolve();
     }
 }

@@ -15,6 +15,7 @@ import eduardofettermann.exercicios.solucoes.aula05.exercicio05lista5.service.S0
 import eduardofettermann.exercicios.solucoes.aula05.exercicio06lista05.service.S06A05;
 import eduardofettermann.exercicios.solucoes.aula06.S02A06;
 import eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service.S01A06;
+import eduardofettermann.exercicios.solucoes.aula06.solucao03aula06.service.S03A06;
 import eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.service.S04A06;
 import eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.service.S01A07;
 import eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.service.S02A07;
@@ -220,7 +221,7 @@ public class Menu {
                     Você quer ver a solução de qual exercício?
                     1 - Exercicio 1 - Stack com livros
                     2 - Exercicio 2 - HashMap com pessoas
-                    3 - Exercicio 3 - TreeMap com agenda (Não Solucionado)
+                    3 - Exercicio 3 - TreeMap com agenda
                     4 - Exercicio 4 - LinkedHashMap
                           
                     0 - Voltar
@@ -231,6 +232,7 @@ public class Menu {
                 case (0) -> showStartMenu();
                 case (1) -> new S01A06().resolve();
                 case (2) -> new S02A06().resolve();
+                case (3) -> new S03A06().resolve();
                 case (4) -> new S04A06().resolve();
             }
         } catch (Exception e) {
