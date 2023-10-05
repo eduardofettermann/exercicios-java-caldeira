@@ -1,7 +1,6 @@
 package eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.service;
 
 import eduardofettermann.exercicios.model.Solucao;
-import br.com.eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.model.*;
 import eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.model.Circle;
 import eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.model.Drawable;
 import eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.model.Square;
