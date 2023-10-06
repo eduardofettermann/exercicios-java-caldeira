@@ -1,16 +1,16 @@
 package eduardofettermann.exercicios.solucoes.aula01;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
 //Exercicio 08
 //        Criar um algoritmo para definir as filas prioritárias. Seu programa deve exibir um menu de opções,
 //        perguntando se a pessoa é Gestante, Idosa, PCD ou Nenhuma das alternativas. Se ela for PCD,
 //        Idosa ou Gestante, tem direito a fila prioritária. Se não, não tem direito."
 
-public class S08A01 implements Solucao {
+public class S08A01 implements Soluction {
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 08 
                 Criar um algoritmo para definir as filas prioritárias. Seu programa deve exibir um menu de opções,
@@ -21,8 +21,8 @@ public class S08A01 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         System.out.println("""
                 Digite a opção melhor correspondende a você:
                 1 - Gestante
@@ -36,6 +36,6 @@ public class S08A01 implements Solucao {
         } else {
             System.out.println("Você tem direito a fila prioritária!");
         }
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 }

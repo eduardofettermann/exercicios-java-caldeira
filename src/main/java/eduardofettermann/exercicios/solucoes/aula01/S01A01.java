@@ -1,14 +1,14 @@
 package eduardofettermann.exercicios.solucoes.aula01;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
 //         Exercicio 01
 //        Crie um programa que leia seu nome e imprima na tela.
 
-public class S01A01 implements Solucao {
+public class S01A01 implements Soluction {
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 01 
                 Crie um programa que leia seu nome e imprima na tela.
@@ -17,11 +17,11 @@ public class S01A01 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         System.out.println("Digite seu nome;");
         String nomeDigitado = scanner.nextLine();
         System.out.println(nomeDigitado);
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 }

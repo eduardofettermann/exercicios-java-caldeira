@@ -1,15 +1,15 @@
 package eduardofettermann.exercicios.solucoes.aula05.exercicio05aula05.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula05.exercicio05aula05.model.Impressao;
 
 import java.util.LinkedList;
 
-public class S05A05 implements Solucao {
+public class S05A05 implements Soluction {
     private LinkedList<Impressao> filaDeImpressao = new LinkedList<>();
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 05 - Uso de List e LinkedList
                 Descrição: Crie um programa Java que simule um sistema de fila de impressão. O programa deve permitir
@@ -21,8 +21,8 @@ public class S05A05 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         exibeMenu();
     }
 
@@ -84,7 +84,7 @@ public class S05A05 implements Solucao {
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

@@ -1,17 +1,17 @@
 package eduardofettermann.exercicios.solucoes.aula01;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
 import java.text.DecimalFormat;
 
 //Exercicio 03
 //        Crie um programa que leia 3 números, imprima o maior, o menor e a média aritmética.
 
-public class S03A01 implements Solucao {
+public class S03A01 implements Soluction {
     private final DecimalFormat FORMATO_DECIMAL = new DecimalFormat("0.00");
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 02
                 Crie um programa que leia 3 números, imprima o maior, o menor e a média aritmética.
@@ -20,8 +20,8 @@ public class S03A01 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         System.out.println("Digite o primeiro número inteiro:");
         int primeiroNumero = scanner.nextInt();
         System.out.println("Digite o segundo número inteiro:");
@@ -42,6 +42,6 @@ public class S03A01 implements Solucao {
         System.out.println("O maior número é " + maior);
         System.out.println("O menor número é " + menor);
         System.out.println("A média aritmética é " + mediaAritmeticaConvertida);
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 }

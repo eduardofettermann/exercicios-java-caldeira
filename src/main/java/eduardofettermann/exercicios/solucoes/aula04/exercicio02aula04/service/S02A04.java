@@ -1,10 +1,10 @@
 package eduardofettermann.exercicios.solucoes.aula04.exercicio02aula04.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
-public class S02A04 implements Solucao {
+public class S02A04 implements Soluction {
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 02 - Figuras geométricas
                                 
@@ -28,15 +28,15 @@ public class S02A04 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         MenuExercicio02Lista4 menu = new MenuExercicio02Lista4();
         menu.exibeMenuInicial();
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

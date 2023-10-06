@@ -1,10 +1,10 @@
 package eduardofettermann.exercicios.solucoes.aula04.exercicio03aula04.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
-public class S03A04 implements Solucao {
+public class S03A04 implements Soluction {
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 03   - Sistema de Tributação para Contas e Bens Financeiros (desafio: Interface + Herança + Polimorfismo)
                                 
@@ -31,15 +31,15 @@ public class S03A04 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         MenuExercicio03Lista4 menu = new MenuExercicio03Lista4();
         menu.exibeMenuInicial();
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

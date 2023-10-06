@@ -1,6 +1,6 @@
 package eduardofettermann.exercicios.solucoes.aula04.exercicio02aula04.model;
 
-import static eduardofettermann.exercicios.model.Solucao.scanner;
+import static eduardofettermann.exercicios.model.Soluction.scanner;
 
 public class Circulo extends FormaGeometrica {
     private double raio;

@@ -1,16 +1,16 @@
 package eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.model.Livro;
 
 import java.util.Comparator;
 import java.util.Stack;
 
-public class S01A06 implements Solucao {
+public class S01A06 implements Soluction {
     Stack<Livro> livros = new Stack<Livro>();
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 01 - Stack com Livros
                 Crie um programa Java que utilize uma estrutura de dados do tipo Stack para armazenar objetos da classe
@@ -21,8 +21,8 @@ public class S01A06 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         exibeMenu();
     }
 
@@ -90,7 +90,7 @@ public class S01A06 implements Solucao {
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

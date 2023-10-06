@@ -4,6 +4,6 @@ public class Square implements Drawable{
     @Override
     public void draw() {
         System.out.println("Desenhando um quadrado...");
-        solution.resolve();
+        solution.resolves();
     }
 }

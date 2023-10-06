@@ -1,12 +1,12 @@
 package eduardofettermann.exercicios.solucoes.aula07.solucao03aula07.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
 import java.util.InputMismatchException;
 
-public class S03A07 implements Solucao {
+public class S03A07 implements Soluction {
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 03 - Tratamento de Erros
                 Crie um programa que solicite ao usuário que insira dois números inteiros. Utilize tratamento de exceções
@@ -18,8 +18,8 @@ public class S03A07 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         showMenu();
     }
 
@@ -50,7 +50,7 @@ public class S03A07 implements Solucao {
             System.out.println("Digite outro número inteiro");
             int secondInteger = scanner.nextInt();
             System.out.printf("\nOs números digitados foram %d e %d\n", firstInteger, secondInteger);
-            resolveNovamente();
+            questionIfResolvesAgain();
         } catch (InputMismatchException e) {
             System.out.println("Ocorreu um erro! Apenas números inteiros são permitidos!");
             askIntegers();
@@ -58,7 +58,7 @@ public class S03A07 implements Solucao {
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

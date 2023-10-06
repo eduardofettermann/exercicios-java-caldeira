@@ -99,19 +99,19 @@ public class Menu {
 
             switch (resposta) {
                 case (0) -> showStartMenu();
-                case (1) -> new S01A01().resolve();
-                case (2) -> new S02A01().resolve();
-                case (3) -> new S03A01().resolve();
-                case (4) -> new S04A01().resolve();
-                case (5) -> new S05A01().resolve();
-                case (6) -> new S06A01().resolve();
-                case (7) -> new S07A01().resolve();
-                case (8) -> new S08A01().resolve();
-                case (9) -> new S09A01().resolve();
-                case (10) -> new S10A01().resolve();
-                case (11) -> new S11A01().resolve();
-                case (12) -> new S12A01().resolve();
-                case (13) -> new S13A01().resolve();
+                case (1) -> new S01A01().resolves();
+                case (2) -> new S02A01().resolves();
+                case (3) -> new S03A01().resolves();
+                case (4) -> new S04A01().resolves();
+                case (5) -> new S05A01().resolves();
+                case (6) -> new S06A01().resolves();
+                case (7) -> new S07A01().resolves();
+                case (8) -> new S08A01().resolves();
+                case (9) -> new S09A01().resolves();
+                case (10) -> new S10A01().resolves();
+                case (11) -> new S11A01().resolves();
+                case (12) -> new S12A01().resolves();
+                case (13) -> new S13A01().resolves();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
@@ -132,11 +132,11 @@ public class Menu {
 
             switch (resposta) {
                 case (0) -> showStartMenu();
-                case (1) -> new S01A02().resolve();
-                case (4) -> new S04A02().resolve();
-                case (5) -> new S05A02().resolve();
-                case (6) -> new S06A02().resolve();
-                case (7) -> new S07A02().resolve();
+                case (1) -> new S01A02().resolves();
+                case (4) -> new S04A02().resolves();
+                case (5) -> new S05A02().resolves();
+                case (6) -> new S06A02().resolves();
+                case (7) -> new S07A02().resolves();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
@@ -156,8 +156,8 @@ public class Menu {
 
             switch (resposta) {
                 case (0) -> showStartMenu();
-                case (1) -> new S01A03().resolve();
-                case (2) -> new S02A03().resolve();
+                case (1) -> new S01A03().resolves();
+                case (2) -> new S02A03().resolves();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
@@ -177,9 +177,9 @@ public class Menu {
             int resposta = scanner.nextInt();
             switch (resposta) {
                 case (0) -> showStartMenu();
-                case (1) -> new S01A04().resolve();
-                case (2) -> new S02A04().resolve();
-                case (3) -> new S03A04().resolve();
+                case (1) -> new S01A04().resolves();
+                case (2) -> new S02A04().resolves();
+                case (3) -> new S03A04().resolves();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
@@ -203,12 +203,12 @@ public class Menu {
 
             switch (resposta) {
                 case (0) -> showStartMenu();
-                case (1) -> new S01A05().resolve();
-                case (2) -> new S02A05().resolve();
-                case (3) -> new S03A05().resolve();
-                case (4) -> new S04A05().resolve();
-                case (5) -> new S05A05().resolve();
-                case (6) -> new S06A05().resolve();
+                case (1) -> new S01A05().resolves();
+                case (2) -> new S02A05().resolves();
+                case (3) -> new S03A05().resolves();
+                case (4) -> new S04A05().resolves();
+                case (5) -> new S05A05().resolves();
+                case (6) -> new S06A05().resolves();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
@@ -230,10 +230,10 @@ public class Menu {
 
             switch (resposta) {
                 case (0) -> showStartMenu();
-                case (1) -> new S01A06().resolve();
-                case (2) -> new S02A06().resolve();
-                case (3) -> new S03A06().resolve();
-                case (4) -> new S04A06().resolve();
+                case (1) -> new S01A06().resolves();
+                case (2) -> new S02A06().resolves();
+                case (3) -> new S03A06().resolves();
+                case (4) -> new S04A06().resolves();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
@@ -257,12 +257,12 @@ public class Menu {
 
             switch (resposta) {
                 case (0) -> showStartMenu();
-                case (1) -> new S01A07().resolve();
-                case (2) -> new S02A07().resolve();
-                case (3) -> new S03A07().resolve();
-                case (4) -> new S04A07().resolve();
-                case (5) -> new S05A07().resolve();
-                case (6) -> new S06A07().resolve();
+                case (1) -> new S01A07().resolves();
+                case (2) -> new S02A07().resolves();
+                case (3) -> new S03A07().resolves();
+                case (4) -> new S04A07().resolves();
+                case (5) -> new S05A07().resolves();
+                case (6) -> new S06A07().resolves();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");

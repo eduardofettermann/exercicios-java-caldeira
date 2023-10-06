@@ -1,6 +1,6 @@
 package eduardofettermann.exercicios.solucoes.aula06.solucao03aula06.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula06.solucao03aula06.model.Contact;
 import eduardofettermann.exercicios.solucoes.aula06.solucao03aula06.model.ZoneCompare;
 
@@ -8,13 +8,13 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Stream;
 
-public class S03A06 implements Solucao {
+public class S03A06 implements Soluction {
     Map<Contact, String> contactsTreeMap = new TreeMap<>();
 
     ZoneCompare zoneCompare = new ZoneCompare();
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 03 - TreeMap com agenda
                 Crie um programa Java que utilize uma estrutura de dados do tipo TreeMap para criar uma agenda telefônica.
@@ -26,8 +26,8 @@ public class S03A06 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         showMenu();
     }
 
@@ -94,7 +94,7 @@ public class S03A06 implements Solucao {
 
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

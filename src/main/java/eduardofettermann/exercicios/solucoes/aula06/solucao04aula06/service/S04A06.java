@@ -1,16 +1,16 @@
 package eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.model.Product;
 
 import java.util.LinkedHashMap;
 
-public class S04A06 implements Solucao {
+public class S04A06 implements Soluction {
     int i = 0;
     LinkedHashMap<Integer, Product> shelf = new LinkedHashMap<>();
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 04 - LinkedHashMap
                 Crie um programa Java que utilize uma estrutura de dados do tipo LinkedHashMap para associar produtos
@@ -21,8 +21,8 @@ public class S04A06 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         addSomeProducts();
         showMenu();
     }
@@ -99,7 +99,7 @@ public class S04A06 implements Solucao {
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

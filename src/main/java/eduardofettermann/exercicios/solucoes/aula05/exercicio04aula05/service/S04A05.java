@@ -1,16 +1,16 @@
 package eduardofettermann.exercicios.solucoes.aula05.exercicio04aula05.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula05.exercicio04aula05.model.Compra;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class S04A05 implements Solucao {
+public class S04A05 implements Soluction {
     private List<Compra> comprasList = new ArrayList<>();
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 04 - Uso de List e ArrayList
                 Descrição: Crie um programa Java que simule uma lista de compras. O programa deve permitir que o usuário
@@ -22,10 +22,10 @@ public class S04A05 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         exibeMenu();
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 
     public void exibeMenu() {
@@ -55,7 +55,7 @@ public class S04A05 implements Solucao {
             case (1) -> exibeListaMenu();
             case (2) -> criaCompraEAdicionaNaArray();
             case (3) -> removeCompra();
-            case (0) -> resolveNovamente();
+            case (0) -> questionIfResolvesAgain();
         }
     }
 
@@ -98,7 +98,7 @@ public class S04A05 implements Solucao {
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

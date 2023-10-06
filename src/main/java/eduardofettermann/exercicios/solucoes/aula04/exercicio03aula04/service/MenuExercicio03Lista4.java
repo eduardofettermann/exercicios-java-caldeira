@@ -3,7 +3,7 @@ package eduardofettermann.exercicios.solucoes.aula04.exercicio03aula04.service;
 import eduardofettermann.exercicios.solucoes.aula04.exercicio03aula04.model.ContaCorrente;
 import eduardofettermann.exercicios.solucoes.aula04.exercicio03aula04.model.ContaPoupanca;
 import eduardofettermann.exercicios.solucoes.aula04.exercicio03aula04.model.SeguroDeVida;
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,13 +40,13 @@ public class MenuExercicio03Lista4 {
                 1 - Conta Corrente      2 - Conta Poupança
                 3 - Seguro de Vida
                 """);
-        int resposta = Solucao.scanner.nextInt();
+        int resposta = Soluction.scanner.nextInt();
         return resposta;
     }
 
     public void exibeMenuContaCorrente() {
         System.out.println("Digite o saldo de sua conta:");
-        double saldo = Solucao.scanner.nextDouble();
+        double saldo = Soluction.scanner.nextDouble();
         ContaCorrente contaCorrente = new ContaCorrente(saldo);
         adicionaNasArrays("Conta Corrente",
                 contaCorrente.retornaSaldoBruto(),
@@ -57,7 +57,7 @@ public class MenuExercicio03Lista4 {
 
     public void exibeMenuContaPoupanca() {
         System.out.println("Digite o saldo de sua conta:");
-        double saldo = Solucao.scanner.nextDouble();
+        double saldo = Soluction.scanner.nextDouble();
         ContaPoupanca contaPoupanca = new ContaPoupanca(saldo);
         adicionaNasArrays("Conta Poupança",
                 contaPoupanca.retornaSaldoBruto(),
@@ -68,7 +68,7 @@ public class MenuExercicio03Lista4 {
 
     public void exibeMenuSeguroDeVida() {
         System.out.println("Digite o saldo de sua conta:");
-        double saldo = Solucao.scanner.nextDouble();
+        double saldo = Soluction.scanner.nextDouble();
         SeguroDeVida seguroDeVida = new SeguroDeVida(saldo);
         adicionaNasArrays("Seguro de Vida",
                 seguroDeVida.retornaSaldoBruto(),
@@ -118,7 +118,7 @@ public class MenuExercicio03Lista4 {
                     
                 0 - Não, imprimir resultado
                 """);
-        int resposta = Solucao.scanner.nextInt();
+        int resposta = Soluction.scanner.nextInt();
         switch (resposta) {
             case (0) -> exibeTodasContas();
             case (1) -> exibeMenuContinuaSomando();
