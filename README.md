@@ -24,6 +24,11 @@ Para executar os exercícios e interagir com as soluções, siga estas etapas:
 5. Na Classe há um método, `public static void main` , execute-o.
 6. Você será apresentado a um menu de linha de comando que permite interagir com as soluções dos exercícios.
 
+## Fonte dos exercícios
+
+<a href="" target="_blank"></a>
+[Exercícios Java Geração Caldeira 2023](https://github.com/SkiereszDiego/Java-Caldeira)
+
 ## Notas Importantes
 
 - A aula 02 não contém os exercícios 2 e 3, pois eles eram idênticos aos da aula 01.
