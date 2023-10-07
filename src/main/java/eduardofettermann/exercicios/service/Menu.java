@@ -23,6 +23,7 @@ import eduardofettermann.exercicios.solucoes.aula07.solucao03aula07.service.S03A
 import eduardofettermann.exercicios.solucoes.aula07.solucao04aula07.service.S04A07;
 import eduardofettermann.exercicios.solucoes.aula07.solucao05aula07.service.S05A07;
 import eduardofettermann.exercicios.solucoes.aula07.solucao06aula07.service.S06A07;
+import eduardofettermann.exercicios.solucoes.aula08.exercicio01aula08.service.S01A08;
 
 import java.util.Scanner;
 
@@ -36,7 +37,7 @@ public class Menu {
                     1 - Aula 01         2 - Aula 02
                     3 - Aula 03         4 - Aula 04
                     5 - Aula 05         6 - Aula 06
-                    7 - Aula 07
+                    7 - Aula 07         8 - Aula 08
                                         
                     0 - Encerrar
                     """);
@@ -50,6 +51,7 @@ public class Menu {
                 case (5) -> showLesson5();
                 case (6) -> showLesson06();
                 case (7) -> showLesson07();
+                case (8) -> showLesson08();
                 case (0) -> System.out.println("Encerrando...");
             }
         } catch (Exception e) {
@@ -263,6 +265,28 @@ public class Menu {
                 case (4) -> new S04A07().resolves();
                 case (5) -> new S05A07().resolves();
                 case (6) -> new S06A07().resolves();
+            }
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
+        }
+    }
+    private void showLesson08() {
+        try {
+            System.out.println("""
+                    Você quer ver a solução de qual exercício?
+                    1 - Exercicio 1 - Maven + Streams
+                    2 - Exercicio 2 - Gradle + Streams (Não solucionado)
+                    3 - Exercicio 3 - Testes unitários (fácil) (Não solucionado)
+                    4 - Exercicio 4 - Calculadora de Hipoteca (Não solucionado)
+                    5 - Exercicio 5 - Testes unitários de uma aplicação que não foi você que desenvolveu (médio) (Não solucionado)
+                          
+                    0 - Voltar
+                    """);
+            int resposta = scanner.nextInt();
+
+            switch (resposta) {
+                case (0) -> showStartMenu();
+                case (1) -> new S01A08().resolves();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
