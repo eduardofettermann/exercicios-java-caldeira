@@ -1,18 +1,16 @@
 # Default ignored files
 /shelf/
- # Arquivos temporários gerados pelo IDE (por exemplo, IntelliJ IDEA ou Eclipse)
- .idea/
-
- # Arquivos compilados e bytecode
- *.class
-
- # Diretórios de saída de compilação
- bin/
- target/
- # Arquivos de log
- *.log
- # Arquivos de configuração do Gradle
- .gradle/
- build/
- # Diretório de saída do IntelliJ IDEA
- out/
+# Arquivos temporários gerados pelo IDE (por exemplo, IntelliJ IDEA ou Eclipse)
+.idea/
+# Arquivos compilados e bytecode
+*.class
+# Diretórios de saída de compilação
+bin/
+target/
+# Arquivos de log
+*.log
+# Arquivos de configuração do Gradle
+.gradle/
+build/
+# Diretório de saída do IntelliJ IDEA
+out/
