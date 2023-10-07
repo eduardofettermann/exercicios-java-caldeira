@@ -1,15 +1,15 @@
 package eduardofettermann.exercicios.solucoes.aula05.exercicio06aula05.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula05.exercicio06aula05.model.Reserva;
 
 import java.util.LinkedList;
 
-public class S06A05 implements Solucao {
+public class S06A05 implements Soluction {
     LinkedList<Reserva> reservas = new LinkedList<>();
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 06 - Uso de List e LinkedList
                 Descrição: Crie um programa Java que represente um sistema de reservas de passagens de avião.
@@ -22,8 +22,8 @@ public class S06A05 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         exibeMenu();
     }
 
@@ -105,7 +105,7 @@ public class S06A05 implements Solucao {
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

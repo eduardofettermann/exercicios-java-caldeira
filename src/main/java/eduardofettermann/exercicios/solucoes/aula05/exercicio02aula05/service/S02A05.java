@@ -1,18 +1,18 @@
 package eduardofettermann.exercicios.solucoes.aula05.exercicio02aula05.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
 import java.util.Arrays;
 import java.util.Random;
 
-public class S02A05 implements Solucao {
+public class S02A05 implements Soluction {
     private int[] inteiros;
     private int ultimoNumero = 100;
     private Random random = new Random();
     private int numerodigitado;
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 02 - Uso de Array
                 Descrição: Crie um programa Java que gere automaticamente um array de 10 números inteiros aleatórios
@@ -23,13 +23,13 @@ public class S02A05 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         criaArrayComAleatorios(10);
         exibePerguntaNumero();
         exibeResultado(temNaArray(numerodigitado));
         exibeArray();
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 
     public void criaArrayComAleatorios(int tamanho) {
@@ -70,7 +70,7 @@ public class S02A05 implements Solucao {
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

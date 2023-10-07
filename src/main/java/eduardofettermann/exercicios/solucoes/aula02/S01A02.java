@@ -1,13 +1,13 @@
 package eduardofettermann.exercicios.solucoes.aula02;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class S01A02 implements Solucao {
+public class S01A02 implements Soluction {
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 01
                 Crie um programa que determine e escreva os números primos compreendidos entre um intervalo fornecido pelo usuário.
@@ -16,8 +16,8 @@ public class S01A02 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         System.out.println("Digite dois números inteiros que eu retornarei todos números inteiros no intervalo deles");
         System.out.println("Digite o primeiro número:");
         int nPrimeiro = scanner.nextInt();
@@ -75,6 +75,6 @@ public class S01A02 implements Solucao {
             }
             arrayDePrimos.forEach(System.out::println);
         }
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 }

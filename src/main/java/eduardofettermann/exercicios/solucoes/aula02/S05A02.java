@@ -1,10 +1,10 @@
 package eduardofettermann.exercicios.solucoes.aula02;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
-public class S05A02 implements Solucao {
+public class S05A02 implements Soluction {
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 05
                 Escreva um programa que separa a string em duas metades e imprime a primeira parte.
@@ -13,8 +13,8 @@ public class S05A02 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         System.out.println("Digite algo:");
         scanner.nextLine();
         String str = scanner.nextLine();
@@ -37,6 +37,6 @@ public class S05A02 implements Solucao {
             case (1) -> System.out.println(respostaMaior);
             case (0) -> System.out.println(respostaMenor);
         }
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 }

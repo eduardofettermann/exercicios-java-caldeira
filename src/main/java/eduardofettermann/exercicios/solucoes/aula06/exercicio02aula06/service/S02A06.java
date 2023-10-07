@@ -1,15 +1,15 @@
 package eduardofettermann.exercicios.solucoes.aula06.exercicio02aula06.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class S02A06 implements Solucao {
+public class S02A06 implements Soluction {
     Map<String, Integer> pessoas = new HashMap<>();
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                  - Exercicio 02 - HashMap com pessoas
                 Crie um programa Java que utilize uma estrutura de dados do tipo HashMap para associar nomes a idades.
@@ -21,8 +21,8 @@ public class S02A06 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         exibeMenu();
     }
 
@@ -98,7 +98,7 @@ public class S02A06 implements Solucao {
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

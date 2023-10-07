@@ -1,6 +1,6 @@
 package eduardofettermann.exercicios.solucoes.aula04.exercicio02aula04.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula04.exercicio02aula04.model.*;
 
 import java.util.ArrayList;
@@ -19,14 +19,14 @@ public class MenuExercicio02Lista4 {
                            
                 0 - Voltar
                 """);
-        int resposta = Solucao.scanner.nextInt();
+        int resposta = Soluction.scanner.nextInt();
         switch (resposta) {
             case (1) -> exibeMenuQuadrado();
             case (2) -> exibeMenuRetangulo();
             case (3) -> exibeMenuTriangulo();
             case (4) -> exibeMenuCirculo();
             case (5) -> exibeMenuLosango();
-            case (0) -> Solucao.menu.showLesson04();
+            case (0) -> Soluction.menu.showLesson04();
         }
     }
 
@@ -86,7 +86,7 @@ public class MenuExercicio02Lista4 {
                 1 - Sim
                 0 - Não, Sair
                 """);
-        switch (Solucao.scanner.nextInt()) {
+        switch (Soluction.scanner.nextInt()) {
             case (1) -> exibeMenuInicial();
             case (0) -> exibirListaDeFormas();
         }

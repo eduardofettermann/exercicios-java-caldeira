@@ -1,10 +1,10 @@
 package eduardofettermann.exercicios.solucoes.aula04.exercicio01aula04.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
-public class S01A04 implements Solucao {
+public class S01A04 implements Soluction {
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 01 - Veículo
                 
@@ -27,15 +27,15 @@ public class S01A04 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         MenuExercicio01Lista4 menuExercicio01Lista4 = new MenuExercicio01Lista4();
         menuExercicio01Lista4.exibeMenuIncial();
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

@@ -1,16 +1,16 @@
 package eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.model.Circle;
 import eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.model.Drawable;
 import eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.model.Square;
 
 
-public class S01A07 implements Solucao {
+public class S01A07 implements Soluction {
     Drawable circle = new Circle();
     Drawable square = new Square();
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 01 - Interface
                 Crie uma interface chamada Desenhavel com um método desenhar().
@@ -24,8 +24,8 @@ public class S01A07 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         showMenu();
     }
 
@@ -49,7 +49,7 @@ public class S01A07 implements Solucao {
 
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

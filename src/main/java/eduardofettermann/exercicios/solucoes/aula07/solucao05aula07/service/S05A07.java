@@ -1,11 +1,11 @@
 package eduardofettermann.exercicios.solucoes.aula07.solucao05aula07.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula07.solucao05aula07.model.InvalidAgeException;
 
-public class S05A07 implements Solucao {
+public class S05A07 implements Soluction {
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 05 - Tratamento de Erros com Exceções Personalizadas (RuntimeException)
                 Crie uma exceção personalizada chamada IdadeInvalidaException que herde de RuntimeException.
@@ -16,8 +16,8 @@ public class S05A07 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         showMenu();
     }
 
@@ -53,7 +53,7 @@ public class S05A07 implements Solucao {
             throw new InvalidAgeException("A idade não pode ser menor que 0 ou maior que 150!");
         }
         System.out.println("A idade digitada foi " + age);
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 
     private boolean ageIsInvalid(int age) {
@@ -61,7 +61,7 @@ public class S05A07 implements Solucao {
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

@@ -1,10 +1,10 @@
 package eduardofettermann.exercicios.solucoes.aula02;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
-public class S06A02 implements Solucao {
+public class S06A02 implements Soluction {
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 06
                 Escreva um programa que receba uma string do usuário e imprima ela ao contrário
@@ -13,8 +13,8 @@ public class S06A02 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         System.out.println("Digite algo que retornarei ao contrário!");
         scanner.nextLine();
         String str = scanner.nextLine();
@@ -28,7 +28,7 @@ public class S06A02 implements Solucao {
         }
         System.out.println(strInversa);
         System.out.println("\n");
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 }
 

@@ -1,12 +1,12 @@
 package eduardofettermann.exercicios.solucoes.aula03.exercicio02aula03.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula03.exercicio02aula03.menu.MenuCirculo;
 
-public class S02A03 implements Solucao {
+public class S02A03 implements Soluction {
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 02 - Círculo
                 Crie uma classe chamada Circulo com os seguintes atributos:
@@ -40,16 +40,16 @@ public class S02A03 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         MenuCirculo menuCirculo = new MenuCirculo();
         menuCirculo.exibeMenuNovoCirculo();
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

@@ -1,10 +1,10 @@
 package eduardofettermann.exercicios.solucoes.aula03.exercicio01aula03;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
-public class S01A03 implements Solucao {
+public class S01A03 implements Soluction {
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 01 (Conta Bancária)
                 Crie uma classe ContaBancaria com os atributos:
@@ -51,8 +51,8 @@ public class S01A03 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         ContaBancaria conta = new ContaBancaria("Eduardo","86021193065",123456,"AgiBank",2000);
         ContaBancaria conta2 = new ContaBancaria("Laís","82345657",562123,"Nubank",2000);
         conta.saca(20);
@@ -62,11 +62,11 @@ public class S01A03 implements Solucao {
         conta.verificarSaldo();
         conta.verificaHorarioAtual();
         conta.verificarInformacoesDaConta();
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

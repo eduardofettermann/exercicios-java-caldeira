@@ -1,6 +1,6 @@
 package eduardofettermann.exercicios.solucoes.aula01;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
 //    Exercicio 06
 //    Escreva um programa que leia a idade do usuário e imprima respostas diferentes dependendo do número colocado:
@@ -9,10 +9,10 @@ import eduardofettermann.exercicios.model.Solucao;
 //    III - Se tiver mais de 65, avisar que também é facultativo o voto;
 //    IV - De 18 até 65, é obrigatório votar.
 
-public class S06A01 implements Solucao {
+public class S06A01 implements Soluction {
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 06
                 Escreva um programa que leia a idade do usuário e imprima respostas diferentes dependendo do número colocado:
@@ -25,8 +25,8 @@ public class S06A01 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         System.out.println("Digite sua idade:");
         int idadeDigitada = scanner.nextInt();
         if (idadeDigitada < 16) {
@@ -36,6 +36,6 @@ public class S06A01 implements Solucao {
         } else if (idadeDigitada >= 18 & idadeDigitada <= 65) {
             System.out.println("Seu voto é obrigatório!");
         }
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 }

@@ -1,14 +1,14 @@
 package eduardofettermann.exercicios.solucoes.aula07.solucao06aula07.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula07.solucao06aula07.model.BankAccount;
 import eduardofettermann.exercicios.solucoes.aula07.solucao06aula07.model.InsufficientBalanceException;
 
-public class S06A07 implements Solucao {
+public class S06A07 implements Soluction {
     BankAccount account = new BankAccount(50);
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 06 - Tratamento de Erros com Exceções Personalizadas (Exception)
                 Crie uma exceção personalizada chamada SaldoInsuficienteException que herde de Exception.
@@ -20,8 +20,8 @@ public class S06A07 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         showMenu();
     }
 
@@ -60,7 +60,7 @@ public class S06A07 implements Solucao {
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

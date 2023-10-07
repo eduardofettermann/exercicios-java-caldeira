@@ -1,16 +1,16 @@
 package eduardofettermann.exercicios.solucoes.aula01;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 
 //Exercicio 13
 //        Escreva um programa que calcule o fatorial de um número inteiro não negativo
 //        fornecido pelo usuário. O fatorial de um número N é o produto de todos os inteiros
 //        de 1 até N.
 
-public class S13A01 implements Solucao {
+public class S13A01 implements Soluction {
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 13
                 Escreva um programa que calcule o fatorial de um número inteiro não negativo
@@ -21,8 +21,8 @@ public class S13A01 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         System.out.println("Digite um número não negativo que mostrarei o seu fatorial!");
         int numero = scanner.nextInt();
         int fatorial = numero;
@@ -30,6 +30,6 @@ public class S13A01 implements Solucao {
             fatorial *= (numero - i);
         }
         System.out.println("O fatorial de " + numero + " é igual a " + fatorial);
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 }

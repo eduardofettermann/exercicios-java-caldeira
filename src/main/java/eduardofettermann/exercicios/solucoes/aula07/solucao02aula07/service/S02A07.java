@@ -1,14 +1,14 @@
 package eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula07.solucao02aula07.model.DayOfWeek;
 
 
-public class S02A07 implements Solucao {
+public class S02A07 implements Soluction {
     DayOfWeek dayOfWeek;
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 02 - Enum
                 Crie um enum chamado DiaDaSemana que represente os dias da semana (por exemplo, SEGUNDA, TERCA, etc.).
@@ -19,8 +19,8 @@ public class S02A07 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         showMenu();
     }
 
@@ -44,7 +44,7 @@ public class S02A07 implements Solucao {
     private void showMenuDayOfWeek() {
         String day = askDayOfWeek();
         returnDayOfWeek(DayOfWeek.valueOf(day.toUpperCase()));
-        resolveNovamente();
+        questionIfResolvesAgain();
     }
 
     private String askDayOfWeek() {
@@ -70,7 +70,7 @@ public class S02A07 implements Solucao {
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }

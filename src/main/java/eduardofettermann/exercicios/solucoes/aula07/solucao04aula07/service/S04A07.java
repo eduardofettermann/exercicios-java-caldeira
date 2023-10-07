@@ -1,16 +1,16 @@
 package eduardofettermann.exercicios.solucoes.aula07.solucao04aula07.service;
 
-import eduardofettermann.exercicios.model.Solucao;
+import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula07.solucao04aula07.model.Calculator;
 import eduardofettermann.exercicios.solucoes.aula07.solucao04aula07.model.Operation;
 
 import java.util.InputMismatchException;
 
-public class S04A07 implements Solucao {
+public class S04A07 implements Soluction {
     Calculator calculator = new Calculator();
 
     @Override
-    public void exibeEnunciado() {
+    public void printQuestion() {
         System.out.println("""
                 - Exercicio 04 - Interface, Enum e Tratamento de Erros
                 Expanda o exercício 3 adicionando uma interface chamada Calculavel com métodos para adicionar, subtrair,
@@ -23,8 +23,8 @@ public class S04A07 implements Solucao {
     }
 
     @Override
-    public void resolve() {
-        exibeEnunciado();
+    public void resolves() {
+        printQuestion();
         showMenu();
 
     }
@@ -63,7 +63,7 @@ public class S04A07 implements Solucao {
             int num2 = scanner.nextInt();
             System.out.printf("\nOs números digitados foram %d e %d\n", num1, num2);
             calculator.calculates(operation, num1, num2);
-            resolveNovamente();
+            questionIfResolvesAgain();
         } catch (InputMismatchException e) {
             System.out.println("Ocorreu um erro! Apenas números inteiros são permitidos!");
             showOperationMenu(operation);
@@ -74,7 +74,7 @@ public class S04A07 implements Solucao {
     }
 
     @Override
-    public void resolveNovamente() {
-        Solucao.super.resolveNovamente();
+    public void questionIfResolvesAgain() {
+        Soluction.super.questionIfResolvesAgain();
     }
 }
