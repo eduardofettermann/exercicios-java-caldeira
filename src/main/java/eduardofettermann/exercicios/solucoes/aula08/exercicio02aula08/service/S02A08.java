@@ -153,7 +153,5 @@ public class S02A08 implements Soluction {
     }
 
     public static void main(String[] args) {
-        S02A08 s02A08 = new S02A08();
-        s02A08.printMenuQuestion();
     }
 }
