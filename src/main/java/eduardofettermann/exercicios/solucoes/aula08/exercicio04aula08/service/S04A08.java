@@ -16,6 +16,7 @@ public class S04A08 implements Soluction {
                 Prazo em anos: o número de anos para pagar o empréstimo.
                                 
                 Obviamente tem que implementar o teste unitário...
+                
                 Solução:
                 """);
     }
@@ -24,6 +25,10 @@ public class S04A08 implements Soluction {
     public void resolves() {
 
     }
+    // TODO: Classe Calculadora Hipoteca com Metodo(Valor,Taxa de juros anual, Prazo de anos)
+
+
+
 
     @Override
     public void questionIfResolvesAgain() {
