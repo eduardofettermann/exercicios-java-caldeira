@@ -4,7 +4,8 @@ import eduardofettermann.exercicios.model.Soluction;
 import eduardofettermann.exercicios.solucoes.aula08.exercicio03aula08.model.Calculator;
 
 public class S03A08 implements Soluction {
-    Calculator calculator = new Calculator();
+    final Calculator CALCULATOR = new Calculator();
+
     @Override
     public void printQuestion() {
         System.out.println("""
@@ -23,8 +24,10 @@ public class S03A08 implements Soluction {
 
     @Override
     public void resolves() {
-
+        printQuestion();
+        CALCULATOR.printCalculatorMenu();
     }
+
 
     @Override
     public void questionIfResolvesAgain() {
