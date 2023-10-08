@@ -7,6 +7,6 @@ public interface Calculable {
 
     void product(int number1, int number2);
 
-
     void quotient(int number1, int number2);
+
 }
