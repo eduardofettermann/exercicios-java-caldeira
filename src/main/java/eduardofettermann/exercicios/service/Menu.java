@@ -25,6 +25,7 @@ import eduardofettermann.exercicios.solucoes.aula07.solucao05aula07.service.S05A
 import eduardofettermann.exercicios.solucoes.aula07.solucao06aula07.service.S06A07;
 import eduardofettermann.exercicios.solucoes.aula08.exercicio01aula08.service.S01A08;
 import eduardofettermann.exercicios.solucoes.aula08.exercicio02aula08.service.S02A08;
+import eduardofettermann.exercicios.solucoes.aula08.exercicio03aula08.service.S03A08;
 
 import java.util.Scanner;
 
@@ -278,7 +279,7 @@ public class Menu {
                     Você quer ver a solução de qual exercício?
                     1 - Exercicio 1 - Maven + Streams
                     2 - Exercicio 2 - Gradle + Streams
-                    3 - Exercicio 3 - Testes unitários (fácil) (Não solucionado)
+                    3 - Exercicio 3 - Testes unitários (fácil)
                     4 - Exercicio 4 - Calculadora de Hipoteca (Não solucionado)
                     5 - Exercicio 5 - Testes unitários de uma aplicação que não foi você que desenvolveu (médio) (Não solucionado)
                           
@@ -290,6 +291,7 @@ public class Menu {
                 case (0) -> showStartMenu();
                 case (1) -> new S01A08().resolves();
                 case (2) -> new S02A08().resolves();
+                case (3) -> new S03A08().resolves();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
