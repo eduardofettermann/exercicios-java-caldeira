@@ -50,6 +50,7 @@ public class Calculator {
         System.out.println("Digite o número que você deseja descobrir sua própria raiz quadrada:");
         double radicando = scanner.nextDouble();
         squaredRootOf(radicando);
+        printCalculatorMenu();
     }
 
     private void printPotenciationMenu() {
@@ -58,6 +59,7 @@ public class Calculator {
         System.out.println("Digite o expoente da operação (inteiro):");
         int expoent = scanner.nextInt();
         potencia(base, expoent);
+        printCalculatorMenu();
     }
 
     private void printMenuEasyCalculation(Operation operation) {
