@@ -13,8 +13,8 @@ import eduardofettermann.exercicios.solucoes.aula05.exercicio03aula05.service.S0
 import eduardofettermann.exercicios.solucoes.aula05.exercicio04aula05.service.S04A05;
 import eduardofettermann.exercicios.solucoes.aula05.exercicio05aula05.service.S05A05;
 import eduardofettermann.exercicios.solucoes.aula05.exercicio06aula05.service.S06A05;
-import eduardofettermann.exercicios.solucoes.aula06.exercicio02aula06.service.S02A06;
 import eduardofettermann.exercicios.solucoes.aula06.exercicio01aula06.service.S01A06;
+import eduardofettermann.exercicios.solucoes.aula06.exercicio02aula06.service.S02A06;
 import eduardofettermann.exercicios.solucoes.aula06.solucao03aula06.service.S03A06;
 import eduardofettermann.exercicios.solucoes.aula06.solucao04aula06.service.S04A06;
 import eduardofettermann.exercicios.solucoes.aula07.solucao01aula07.service.S01A07;
@@ -27,6 +27,7 @@ import eduardofettermann.exercicios.solucoes.aula08.exercicio01aula08.service.S0
 import eduardofettermann.exercicios.solucoes.aula08.exercicio02aula08.service.S02A08;
 import eduardofettermann.exercicios.solucoes.aula08.exercicio03aula08.service.S03A08;
 import eduardofettermann.exercicios.solucoes.aula08.exercicio04aula08.service.S04A08;
+import eduardofettermann.exercicios.solucoes.aula08.exercicio05aula08.service.S05A08;
 
 import java.util.Scanner;
 
@@ -282,18 +283,18 @@ public class Menu {
                     (2) - Exercicio 2 - Gradle + Streams
                     (3) - Exercicio 3 - Testes unitários (fácil)
                     (4) - Exercicio 4 - Calculadora de Hipoteca
-                    (5) - Exercicio 5 - Testes unitários de uma aplicação que não foi você que desenvolveu (médio) (Não solucionado)
+                    (5) - Exercicio 5 - Testes unitários de uma aplicação que não foi você que desenvolveu (médio)
                           
                     (0) - Voltar
                     """);
             int resposta = scanner.nextInt();
-
             switch (resposta) {
                 case (0) -> showStartMenu();
                 case (1) -> new S01A08().resolves();
                 case (2) -> new S02A08().resolves();
                 case (3) -> new S03A08().resolves();
                 case (4) -> new S04A08().resolves();
+                case (5) -> new S05A08().resolves();
             }
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e + "\n" + "Se o problema persistir tente novamente mais tarde!");
