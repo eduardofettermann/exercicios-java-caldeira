@@ -3,6 +3,7 @@ package eduardofettermann.exercicios.solucoes.aula08.exercicio04aula08.service;
 import eduardofettermann.exercicios.model.Soluction;
 
 public class S04A08 implements Soluction {
+    private static final Calculator CALCULATOR = new Calculator();
     @Override
     public void printQuestion() {
         System.out.println("""
@@ -16,19 +17,16 @@ public class S04A08 implements Soluction {
                 Prazo em anos: o número de anos para pagar o empréstimo.
                                 
                 Obviamente tem que implementar o teste unitário...
-                
+                                
                 Solução:
                 """);
     }
 
     @Override
     public void resolves() {
-
+        printQuestion();
+        CALCULATOR.printCalculatorMenu();
     }
-    // TODO: Classe Calculadora Hipoteca com Metodo(Valor,Taxa de juros anual, Prazo de anos)
-
-
-
 
     @Override
     public void questionIfResolvesAgain() {
